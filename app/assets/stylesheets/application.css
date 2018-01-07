@@ -8,25 +8,7 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 45px;
-  width: 100%;
-  z-index: 99;
-  background-color: gold;
-}
-
-#navbar_spacer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 45px;
-  width: 100%;
-}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 90px;
+  height: 75px;
   width: 100%;
   z-index: 99;
   background-color: gold;
@@ -34,12 +16,19 @@ html, body {
 
 #center_column {
   position: relative;
-  top: 37px;
+  top: 75px;
   left: 93px;
   height: 100%;
   width: 942.25px;
-  padding: 0 23px;
+  padding: 46px 23px;
   background-color: white;
+}
+
+#center_column:hover {
+  opacity:0.4; /* how much transparent you want image to be*/
+  filter:alpha(opacity=40); /* browser fix*/
+  -webkit-opacity:0.4; /*vendor prefixes for website browsers*/
+  -moz-opacity:0.4; /* same as above, edited thankx to @ Daniel_Lisik  */
 }
 
 #center_column_spacer {
@@ -92,4 +81,54 @@ html, body {
   position: relative;
   bottom: 7px;
   margin-top: 0;
+}
+
+#navbar #button_panel {
+  display: table;
+  float: right;
+  height: 75px;
+  width: 503px;
+  background-color: purple;
+}
+
+#navbar .buttons {
+  display: table-cell;
+  height: 75px;
+  width: 75px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#navbar .buttons h {
+  line-height: 75px;
+}
+
+#button_panel #home {
+  background-image: url("home.png");
+  position: absolute;
+}
+
+#button_panel #about {
+  background-image: url("about.png");
+  position: absolute;
+  right: 353px;
+}
+
+#button_panel #skills {
+  background-image: url("skills.png");
+  position: absolute;
+  right: 278px;
+}
+
+#button_panel #my_work {
+  background-image: url("my_work.png");
+  position: absolute;
+  right: 203px;
+}
+
+#button_panel #contact {
+  background-image: url("contact.png");
+  position: absolute;
+  right: 128px;
 }

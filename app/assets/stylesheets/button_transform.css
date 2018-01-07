@@ -1,0 +1,40 @@
+.button_transform {
+  transition-duration: 0.5s;            
+  -webkit-transition-duration: 0.5s; 
+  -moz-transition-duration: 0.5s;    
+  -o-transition-duration: 0.5s;
+  overflow: hidden;
+  height: 0px;
+}
+
+.buttons:hover .button_transform {
+  height: 50px;
+}
+
+.text_display {
+  display: none;
+  transform-origin: top !important;               
+  transition-duration: 0.5s;               
+  -webkit-transform-origin: top;       
+  -webkit-transition-duration: 0.5s;   
+  -moz-transform-origin: top;           
+  -moz-transition-duration: 0.5s;       
+  -o-transform-origin: top;    
+  -o-transition-duration: 0.5s;
+  font-size: 16px;
+  font-family: Arial;       
+  font-weight: normal;
+  text-align:center;
+  color: #FFF;       
+}
+
+.buttons:hover .text_display {
+  transform-origin: top;
+  display: block;
+  position: relative;
+  bottom: 50px;
+  background: rgba(0, 0, 0, 0.5);   
+  color: #fff;   
+  height: 75px;
+  width: 75px;
+}
