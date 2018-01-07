@@ -1,15 +1,95 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html, body {
+  width: 1370px;
+  height: 100%;
+  background-color: green;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  z-index: 99;
+  background-color: gold;
+}
+
+#navbar_spacer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 100%;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  z-index: 99;
+  background-color: gold;
+}
+
+#center_column {
+  position: relative;
+  top: 37px;
+  left: 93px;
+  height: 100%;
+  width: 942.25px;
+  padding: 0 23px;
+  background-color: white;
+}
+
+#center_column_spacer {
+  height: 12px;
+}
+
+.center_column_row {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  height: 254px;
+}
+
+.center_column_img {
+  order: 1;
+  height: 100%;
+  width: 516px;
+}
+
+.center_column_img img {
+  object-fit: cover;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  height: 222.3px;
+  width: 468.35px;
+  margin: auto;
+}
+
+.center_column_p {
+  order: 2;
+  width: 426px;
+  height: 254.25px;
+}
+
+.inner_p_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 222.3px;
+  width: 383.4px;
+  margin: auto;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.inner_p_container p {
+  position: relative;
+  bottom: 7px;
+  margin-top: 0;
+}
