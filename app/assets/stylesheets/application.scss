@@ -29,10 +29,18 @@ html, body {
   padding: 0;
 }
 
-.samples {
-  object-fit: contain;
+.sample_containers {
   width: 33%;
 }
+
+.samples {
+  width: 100%;
+}
+
+.samples img {
+  object-fit: contain;
+}
+
 
 #sample1 {
   order: 1;

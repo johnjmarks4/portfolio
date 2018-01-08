@@ -7,11 +7,22 @@
   height: 0px;
 }
 
+.image_transform {
+  transition-duration: 0.5s;            
+  -webkit-transition-duration: 0.5s; 
+  -moz-transition-duration: 0.5s;    
+  -o-transition-duration: 0.5s;
+}
+
 .buttons:hover .button_transform {
   height: 50px;
 }
 
-.text_display {
+.sample_containers:hover .image_transform {
+  height: 254.17px;
+}
+
+.text_display, .sample_description {
   display: none;
   transform-origin: top !important;               
   transition-duration: 0.5s;               
@@ -28,13 +39,22 @@
   color: #FFF;       
 }
 
-.buttons:hover .text_display {
+.buttons:hover .text_display, .sample_containers:hover .sample_description {
   transform-origin: top;
   display: block;
   position: relative;
-  bottom: 50px;
   background: rgba(0, 0, 0, 0.5);   
   color: #fff;   
+}
+
+.buttons:hover .text_display {
+  bottom: 50px;
   height: 75px;
   width: 75px;
+}
+
+.sample_containers:hover .sample_description {
+  height: 254.17px;
+  width: 452.09px;
+  bottom: 254.17px;
 }
