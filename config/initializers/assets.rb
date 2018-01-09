@@ -13,3 +13,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( reset.css )
 
 Rails.application.config.assets.precompile += %w( button_transform.css )
+
+Rails.application.config.assets.precompile += %w( selfie_transform.css )
