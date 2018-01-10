@@ -36,14 +36,22 @@ p {
   color: #7a7a7a;
 }
 
-#navbar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 99;
+  background-color: #181818;
+}
+
+#general.navbar {
   height: 75px;
   width: 100%;
-  z-index: 99;
-  background-color: gold;
+}
+
+#landing.navbar {
+  height: 100%;
+  width: 60px;
 }
 
 #center_column {
@@ -83,52 +91,100 @@ p {
   order: 2;
 }
 
-#navbar #button_panel {
+.navbar #button_panel {
   display: table;
   float: right;
   height: 75px;
   width: 503px;
-  background-color: purple;
 }
 
-#navbar .buttons {
-  display: table-cell;
-  height: 75px;
-  width: 75px;
+.navbar .buttons {
   background-size: 60px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#navbar .buttons h {
+.navbar .buttons h {
   line-height: 75px;
 }
 
-#button_panel #home {
+.navbar #home {
   background-image: url("home.png");
+}
+
+.navbar #about {
+  background-image: url("about.png");
+}
+
+.navbar #skills {
+  background-image: url("skills.png");
+}
+
+.navbar #my_work {
+  background-image: url("my_work.png");
+}
+
+.navbar #contact {
+  background-image: url("contact.png");
+}
+
+.navbar #home, .navbar #about, .navbar #skills, 
+.navbar #my_work, .navbar #contact {
   position: absolute;
 }
 
-#button_panel #about {
-  background-image: url("about.png");
-  position: absolute;
+#general.navbar .buttons {
+  display: table-cell;
+  height: 75px;
+  width: 75px;
+}
+
+#general.navbar #about {
   right: 353px;
 }
 
-#button_panel #skills {
-  background-image: url("skills.png");
-  position: absolute;
+#general.navbar #skills {
   right: 278px;
 }
 
-#button_panel #my_work {
-  background-image: url("my_work.png");
-  position: absolute;
+#general.navbar #my_work {
   right: 203px;
 }
 
-#button_panel #contact {
-  background-image: url("contact.png");
-  position: absolute;
+#general.navbar #contact {
   right: 128px;
+}
+
+#landing.navbar #button_panel {
+  position: absolute;
+  top: 50%;
+  margin-top: -135px;
+  width: 60px;
+  height: 270px;
+}
+
+#landing.navbar .buttons {
+  background-size: 22px 23px;
+  width: 60px;
+  height: 51px;
+}
+
+#landing.navbar #home {
+  margin: 0 auto;
+}
+
+#landing.navbar #about {
+  top: 56px;
+}
+
+#landing.navbar #skills {
+  top: 112px;
+}
+
+#landing.navbar #my_work {
+  top: 168px;
+}
+
+#landing.navbar #contact {
+  top: 219px;
 }

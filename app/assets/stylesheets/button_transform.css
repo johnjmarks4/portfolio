@@ -24,23 +24,39 @@
 
 .text_display, .sample_description {
   display: none;
-  transform-origin: top !important;               
+  /*transform-origin: top !important;               
   transition-duration: 0.5s;               
   -webkit-transform-origin: top;       
   -webkit-transition-duration: 0.5s;   
-  -moz-transform-origin: top;           
+  -moz-transform-origin: top;*/         
   -moz-transition-duration: 0.5s;       
-  -o-transform-origin: top;    
-  -o-transition-duration: 0.5s;
+  /*-o-transform-origin: top;    
+  -o-transition-duration: 0.5s;*/
   font-size: 16px;
   font-family: Arial;       
   font-weight: normal;
-  text-align:center;
+  text-align: center;
   color: #FFF;       
 }
 
+#landing.navbar .text_display {
+  width: 59px;
+  height: 51px;
+  line-height: 51px !important;
+}
+
+#landing.navbar .text_display h {
+  line-height: 51px !important;
+}
+
+#landing.navbar #my_work h {
+  position: relative;
+  top: 6.5px;
+  display: block;
+  line-height: 20px !important;
+}
+
 .buttons:hover .text_display, .sample_containers:hover .sample_description {
-  transform-origin: top;
   display: block;
   position: relative;
   background: rgba(0, 0, 0, 0.5);   
