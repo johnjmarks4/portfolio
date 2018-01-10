@@ -200,3 +200,37 @@ p {
   border: thin solid #f65026;
   border-radius: 3px;
 }
+
+#landing.navbar ul {
+  object-fit: cover;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 60px;
+  height: 120px;
+}
+
+#landing.navbar ul li {
+  width: 60px;
+  height: 30px;
+  background-size: 13.93333px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#twitter {
+  background-image: url("twitter.png");
+  background-size: 20px !important;
+}
+
+#linkedin {
+  background-image: url("linkedin.png");
+}
+
+#facebook {
+  background-image: url("facebook.png");
+}
+
+#rss {
+  background-image: url("rss.png");
+}
