@@ -1,4 +1,19 @@
-.button_transform {
+.text_display, .sample_description {
+  font-family: Montserrat, Tahoma;       
+  font-weight: normal;
+  text-align: center;      
+}
+
+.buttons:hover .text_display, .sample_containers:hover .sample_description {
+  display: block;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);   
+  color: #98ff98;   
+}
+
+/*------------- general navbar only -------------*/
+
+#general.navbar .button_transform {
   transition-duration: 0.5s;            
   -webkit-transition-duration: 0.5s; 
   -moz-transition-duration: 0.5s;    
@@ -7,39 +22,44 @@
   height: 0px;
 }
 
-.image_transform {
-  transition-duration: 0.5s;            
-  -webkit-transition-duration: 0.5s; 
-  -moz-transition-duration: 0.5s;    
-  -o-transition-duration: 0.5s;
-}
-
-.buttons:hover .button_transform {
+#general.navbar .buttons:hover .button_transform {
   height: 50px;
 }
 
-.sample_containers:hover .image_transform {
-  height: 254.17px;
-}
-
-.text_display, .sample_description {
+#general.navbar .text_display, .sample_description {
   display: none;
-  /*transform-origin: top !important;               
+  transform-origin: top !important;               
   transition-duration: 0.5s;               
   -webkit-transform-origin: top;       
   -webkit-transition-duration: 0.5s;   
-  -moz-transform-origin: top;*/         
+  -moz-transform-origin: top;        
   -moz-transition-duration: 0.5s;       
-  /*-o-transform-origin: top;    
-  -o-transition-duration: 0.5s;*/
+  -o-transform-origin: top;    
+  -o-transition-duration: 0.5s;
   font-size: 16px;
-  font-family: Arial;       
-  font-weight: normal;
-  text-align: center;
-  color: #FFF;       
+}
+
+#general.navbar .buttons:hover .text_display {
+  display: block;
+  bottom: 50px;
+  height: 74px;
+  width: 75px;
+}
+
+/*------------- landing navbar only -------------*/
+
+#landing.navbar .buttons:hover .text_display, .text_display:hover {
+  background-color: #181818;
+  -webkit-transition: background-color 100ms linear, opacity 1s linear;
+  -ms-transition: background-color 100ms linear, opacity 1s linear;
+  transition: background-color 100ms linear, opacity 1s linear;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 
 #landing.navbar .text_display {
+  opacity: 0;
   width: 59px;
   height: 51px;
   line-height: 51px !important;
@@ -47,30 +67,4 @@
 
 #landing.navbar .text_display h {
   line-height: 51px !important;
-}
-
-#landing.navbar #my_work h {
-  position: relative;
-  top: 6.5px;
-  display: block;
-  line-height: 20px !important;
-}
-
-.buttons:hover .text_display, .sample_containers:hover .sample_description {
-  display: block;
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);   
-  color: #fff;   
-}
-
-.buttons:hover .text_display {
-  bottom: 50px;
-  height: 75px;
-  width: 75px;
-}
-
-.sample_containers:hover .sample_description {
-  height: 254.17px;
-  width: 452.09px;
-  bottom: 254.17px;
 }
