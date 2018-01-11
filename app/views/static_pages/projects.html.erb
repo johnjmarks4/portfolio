@@ -1,18 +1,18 @@
-<div id="general" class="navbar">
+<div id="landing" class="navbar">
   <%= render "navbar" %>
 </div>
 
 <div id="center_column">
   <div class="sample_containers" id="sample_container1">
-    <%= image_tag "logo", class: "samples", id: "sample1" %>
+    <%= link_to image_tag("logo"), "http://arcane-stream-86572.herokuapp.com/" %>
     <div class="image_transform">
       <div class="sample_description">
         <p>This is a message</p>
       </div>
     </div>
   </div>
-  <div class="sample_containers">
-    <%= image_tag "screen_cap6", class: "samples", id: "sample2" %>
+  <div class="sample_containers" id="sample_container2">
+    <%= link_to image_tag("chess1"), "https://github.com/johnjmarks4/chess" %>
     <div class="image_transform">
       <div class="sample_description">
         <p>This is a message</p>
