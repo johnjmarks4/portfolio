@@ -223,14 +223,30 @@ p {
   background-size: 20px !important;
 }
 
+#twitter:hover {
+  background-image: url("twitter green.png");
+}
+
 #linkedin {
   background-image: url("linkedin.png");
+}
+
+#linkedin:hover {
+  background-image: url("linkedin green.png");
 }
 
 #facebook {
   background-image: url("facebook.png");
 }
 
+#facebook:hover {
+  background-image: url("facebook green.png");
+}
+
 #rss {
   background-image: url("rss.png");
+}
+
+#rss:hover {
+  background-image: url("rss green.png");
 }

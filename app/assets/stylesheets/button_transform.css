@@ -11,6 +11,30 @@
   color: #98ff98;   
 }
 
+#home:hover {
+  background-image: url("home green.png");
+}
+
+#about:hover {
+  background-image: url("about green.png");
+}
+
+#skills:hover {
+  background-image: url("skills green.png");
+}
+
+#my_work:hover {
+  background-image: url("my_work green.png");
+}
+
+#about:hover {
+  background-image: url("about green.png");
+}
+
+#contact:hover {
+  background-image: url("contact green.png");
+}
+
 /*------------- general navbar only -------------*/
 
 #general.navbar .button_transform {
