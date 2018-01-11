@@ -1,4 +1,6 @@
 .text_display, .sample_description {
+  font-size: 11px;
+  letter-spacing: 1.25px;
   font-family: Montserrat, Tahoma;       
   font-weight: normal;
   text-align: center;      
@@ -7,6 +9,7 @@
 .buttons:hover .text_display, .sample_containers:hover .sample_description {
   display: block;
   position: relative;
+  text-decoration: none;
   background: rgba(0, 0, 0, 0.5);   
   color: #98ff98;   
 }

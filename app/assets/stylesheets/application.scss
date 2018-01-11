@@ -41,19 +41,20 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 60px;
   z-index: 99;
   background-color: #181818;
 }
 
-#general.navbar {
-  height: 75px;
-  width: 100%;
-}
-
-#landing.navbar {
-  height: 100%;
-  width: 60px;
-}
+/*.navbar #logo {
+  width: 59px;
+  height: 80.8833px;
+  object-fit: cover;
+  font-size: 25px;
+  color: rgb(255, 186, 207);
+  background-color: #7a7a7a;
+}*/
 
 #center_column {
   position: relative;
@@ -115,53 +116,56 @@ p {
 }
 
 .navbar #home {
+  margin: 0 auto;
   background-image: url("home.png");
 }
 
+.navbar #home_green {
+  margin: 0 auto;
+  background-image: url("home green.png");
+}
+
 .navbar #about {
+  top: 56px;
   background-image: url("about.png");
 }
 
+.navbar #about_green {
+  top: 56px;
+  background-image: url("about green.png");
+}
+
 .navbar #skills {
+  top: 112px;
   background-image: url("skills.png");
 }
 
+.navbar #skills_green {
+  top: 112px;
+  background-image: url("skills green.png");
+}
+
 .navbar #my_work {
+  top: 168px;
   background-image: url("my_work.png");
 }
 
+.navbar #my_work_green {
+  top: 168px;
+  background-image: url("my_work green.png");
+}
+
 .navbar #contact {
+  top: 219px;
   background-image: url("contact.png");
 }
 
-.navbar #home, .navbar #about, .navbar #skills, 
-.navbar #my_work, .navbar #contact {
-  position: absolute;
+.navbar #contact_green {
+  top: 219px;
+  background-image: url("contact green.png");
 }
 
-#general.navbar .buttons {
-  display: table-cell;
-  height: 75px;
-  width: 75px;
-}
-
-#general.navbar #about {
-  right: 353px;
-}
-
-#general.navbar #skills {
-  right: 278px;
-}
-
-#general.navbar #my_work {
-  right: 203px;
-}
-
-#general.navbar #contact {
-  right: 128px;
-}
-
-#landing.navbar #button_panel {
+.navbar #button_panel {
   position: absolute;
   top: 50%;
   margin-top: -135px;
@@ -169,33 +173,21 @@ p {
   height: 270px;
 }
 
-#landing.navbar .buttons {
+.navbar .buttons {
+  position: absolute;
   background-size: 22px 23px;
   width: 60px;
   height: 51px;
 }
 
-#landing.navbar #home {
-  margin: 0 auto;
-}
-
-#landing.navbar #about {
-  top: 56px;
-}
-
-#landing.navbar #skills {
-  top: 112px;
-}
-
-#landing.navbar #my_work {
-  top: 168px;
-}
-
-#landing.navbar #contact {
-  top: 219px;
+#button_panel a {
+  width: 60px;
+  height: 51px;
 }
 
 #contact_me {
+  display: block;
+  text-decoration: none;
   width: 131px;
   height: 33.4px;
   line-height: 28px;
@@ -207,7 +199,12 @@ p {
   border-radius: 3px;
 }
 
-#landing.navbar ul {
+#contact_me:hover {
+  background-color: #f65026;
+  color: #3f3f3f;
+}
+
+.navbar ul {
   object-fit: cover;
   position: absolute;
   bottom: 20px;
@@ -216,12 +213,18 @@ p {
   height: 120px;
 }
 
-#landing.navbar ul li {
+.navbar ul li {
   width: 60px;
   height: 30px;
   background-size: 13.93333px 15px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+ul a {
+  display: block;
+  width: 60px;
+  height: 30px;
 }
 
 #twitter {

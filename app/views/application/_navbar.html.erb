@@ -1,44 +1,44 @@
 <table id="button_panel"> 
-  <tr class="buttons" id="home">
+  <%= content_tag(:tr, class: "buttons", id: on_page("home")) do -%>
     <td class="button_transform">
-      <td class="text_display">
-        <h>Home</h>
+      <td>
+        <%= link_to "HOME", root_path, class: "text_display" %>
       </td>
     </td>
-  </tr>
-  <tr class="buttons" id="about">
+  <% end -%>
+  <%= content_tag(:tr, class: "buttons", id: on_page("about")) do -%>
     <td class="button_transform">
-      <td class="text_display">
-        <h>About</h>
+      <td>
+        <%= link_to "ABOUT", about_path, class: "text_display" %>
       </td>
     </td>
-  </tr>
-  <tr class="buttons" id="skills">
+  <% end -%>
+  <%= content_tag(:tr, class: "buttons", id: on_page("skills")) do -%>
     <td class="button_transform">
-      <td class="text_display">
-        <h>Skills</h>
+      <td>
+        <%= link_to "SKILLS", skills_path, class: "text_display" %>
       </td>
     </td>
-  </tr>
-  <tr class="buttons" id="my_work">
+  <% end %>
+  <%= content_tag(:tr, class: "buttons", id: on_page("my_work")) do -%>
     <td class="button_transform">
-      <td class="text_display">
-        <h>My Work</h>
+      <td>
+        <%= link_to "MY WORK", my_work_path, class: "text_display" %>
       </td>
     </td>
-  </tr>
-  <tr class="buttons" id="contact">
+  <% end -%>
+  <%= content_tag(:tr, class: "buttons", id: on_page("contact")) do -%>
     <td class="button_transform">
-      <td class="text_display">
-        <h>Contact</h>
+      <td>
+        <%= link_to "CONTACT", contact_path, class: "text_display" %>
       </td>
     </td>
-  </tr>
+  <% end -%>
 </table>
 
 <ul>
-  <li id="twitter"></li>
-  <li id="linkedin"></li>
-  <li id="facebook"></li>
+  <li id="twitter"><%= link_to "", "https://twitter.com/johnjmarks" %></li>
+  <li id="linkedin"><%= link_to "", "https://twitter.com/johnjmarks" %></li>
+  <li id="facebook"><%= link_to "", "https://www.facebook.com/john.j.marks.1" %></li>
   <li id="rss"></li>
 </ul>

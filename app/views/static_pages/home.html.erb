@@ -1,14 +1,10 @@
-<div id="landing" class="navbar">
-  <%= render "navbar" %>
-</div>
-
 <div class="page">
   <div id="intro">
     <h1>John Marks</h1>
     <p>This is my page</p>
-    <div id="contact_me">CONTACT ME</div>
+    <%= link_to "CONTACT ME", contact_path, id: "contact_me" %>
   </div>
 </div>
 
-<%= link_to image_tag("me"), projects_path, id: "selfie" %>
-<%= link_to "See My Projects", projects_path, id: "selfie_caption" %>
+<%= link_to image_tag("me"), my_work_path, id: "selfie" %>
+<%= link_to "See My Projects", my_work_path, id: "selfie_caption" %>
