@@ -47,14 +47,27 @@ p {
   background-color: #181818;
 }
 
-/*.navbar #logo {
+/*.navbar #logo_container {
+  background-color: #070707;
   width: 59px;
-  height: 80.8833px;
-  object-fit: cover;
-  font-size: 25px;
-  color: rgb(255, 186, 207);
-  background-color: #7a7a7a;
+  height: 80.88px;
 }*/
+
+.navbar #logo {
+  width: 59px;
+  height: 80.88px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 25px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica";
+  font-weight: bold;
+  line-height: 26px;
+  color: rgb(237, 93, 31);
+  background-color: #070707; /*#3f3f3f*/
+  text-align: center;
+  vertical-align: bottom;
+}
 
 #center_column {
   position: relative;
