@@ -272,3 +272,22 @@ ul a {
 #rss:hover {
   background-image: url("rss green.png");
 }
+
+#silver_star {
+  display: block;
+  margin: 0 auto;
+}
+
+.engraved_text {
+  display: block;
+  margin: 0 auto;
+  font-family: "Century Gothic", "HelveticaNeueLT Pro 45 Lt",
+                sans-serif;
+  text-shadow: -1px -1px 1px #000;
+  position: relative;
+  bottom: 200px;
+}
+
+.engraved_text p {
+  color: #c0c0c0;
+}
