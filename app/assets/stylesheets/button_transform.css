@@ -50,7 +50,7 @@
 
 .navbar .text_display {
   opacity: 0;
-  width: 59px;
+  width: 59px !important;
   height: 51px;
   line-height: 51px !important;
 }

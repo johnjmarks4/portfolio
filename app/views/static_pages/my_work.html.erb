@@ -5,26 +5,22 @@
 <div id="center_column">
   <div class="sample_containers" id="sample_container1">
     <%= link_to image_tag("logo"), "http://arcane-stream-86572.herokuapp.com/" %>
-    <div class="image_transform">
-      <%= link_to "http://arcane-stream-86572.herokuapp.com/" do %>
-        <div class="sample_description"></div>
-        <%= link_to "http://arcane-stream-86572.herokuapp.com/", class: "sample_text" do %>
-          <p>VIEW</p>
-          <p>PROJECT</p>
-        <% end %>
+    <%= link_to "http://arcane-stream-86572.herokuapp.com/", class: "sample_description" do %>
+      <div class="sample_description"></div>
+      <%= link_to "http://arcane-stream-86572.herokuapp.com/", class: "sample_text" do %>
+        <p>VIEW</p>
+        <p>PROJECT</p>
       <% end %>
-    </div>
+    <% end %>
   </div>
   <div class="sample_containers" id="sample_container2">
     <%= link_to image_tag("chess1"), "https://github.com/johnjmarks4/chess" %>
-    <div class="image_transform">
-      <%= link_to "https://github.com/johnjmarks4/chess" do %>
-        <div class="sample_description"></div>
-        <%= link_to  "https://github.com/johnjmarks4/chess", class: "sample_text" do %>
-          <p>VIEW</p>
-          <p>PROJECT</p>
-        <% end %>
+    <%= link_to "https://github.com/johnjmarks4/chess", class: "sample_description" do %>
+      <div class="sample_description"></div>
+      <%= link_to  "https://github.com/johnjmarks4/chess", class: "sample_text" do %>
+        <p>VIEW</p>
+        <p>PROJECT</p>
       <% end %>
-    </div>
+    <% end %>
   </div>
 </div>

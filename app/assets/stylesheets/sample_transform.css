@@ -14,6 +14,7 @@
 }
 
 .sample_description {
+  overflow: hidden;
   position: relative;
   bottom: 112.675px;
   width: 1em;
@@ -30,13 +31,16 @@
 .sample_containers:hover .sample_description {
   visibility: visible;
   transform: scale(10, 10);
+  bottom: 112.675px;
 }
 
-.sample_text, .sample_text:hover, .sample_text:active {
+.sample_text, .sample_text:hover, .sample_text:active, 
+.sample_text:visited, .sample_text:link {
   visibility: hidden;
   position: relative;
   bottom: 123.165px;
   left: 2px;
+  width: 240px;
   display: block;
   margin: 0 auto;
   font-size: 5.5px;
@@ -56,5 +60,5 @@
 
 .sample_containers:hover .sample_text {
   visibility: visible;
-  transform: scale(2, 2);
+  transform: scale(1.95, 2);
 }
