@@ -5,11 +5,20 @@ html, body {
   position: relative;
   width: 1370px;
   height: 100%;
-  font-family: Lato;
+  font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   background-color: #3f3f3f;
   overflow: hidden;
+}
+
+::selection {
+  background: #FF8300;
+  color: white;
+}
+::-moz-selection {
+  background: #FF8300;
+  color: white;
 }
 
 #intro {
@@ -22,10 +31,11 @@ html, body {
 h1, p {
   letter-spacing: -1px;
   text-align: center;
+  font-family: "Montserrat", "Tahoma";
 }
 
 h1 {
-  font-family: Montserrat, Tahoma;
+  font-family: "Montserrat", "Tahoma";
   color: #cfcfcf;
   font-size: 1.6em;
   line-height: 36px;
@@ -206,6 +216,7 @@ p {
   line-height: 28px;
   text-align: center;
   letter-spacing: 3.5px;
+  font-family: "Montserrat", "Tahoma";
   font-size: 11px;
   color: #f65026;
   border: thin solid #f65026;
@@ -274,6 +285,10 @@ ul a {
 }
 
 #silver_star {
+  position: relative;
+  left: 100px;
+  width: 50%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -290,4 +305,93 @@ ul a {
 
 .engraved_text p {
   color: #c0c0c0;
+}
+
+#skills_page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#skills_left_pane {
+  order: 1;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto !important;
+  width: 410px;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  left: 10%;
+}
+
+#skills_right_pane {
+  order: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#skills_left_pane ul {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+#skills_left_pane li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #999;
+  background-color: #545454;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+  border: thin solid #222;
+  padding: 8px 5px;
+  border-radius: 3px;
+  margin: 8.3px 3px;
+  position: relative;
+  right: 3px;
+}
+
+#skills_left_pane h1 {
+  font-size: 4.1em !important;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 48px;
+}
+
+#skills_left_pane #headline1 {
+  float: left;
+  color: #f65026;
+}
+
+#skills_left_pane #ampersand {
+  float: right;
+  position: relative;
+  right: 207px;
+}
+
+#skills_left_pane #headline2 {
+  color: #98ff98;
+}
+
+#skills_left_pane p {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+
+#skills_project_img {
+  position: absolute;
+  right: 5.6204%;
+  top: 23.1%; /*23.1%;*/
+  height: 100%;
+  object-fit: cover;
+}
+
+#skills_project_img img {
+  height: 50%; /*60%*/
 }
