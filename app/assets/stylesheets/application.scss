@@ -129,7 +129,6 @@ p {
 }
 
 .navbar .buttons {
-  background-size: 60px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -140,52 +139,62 @@ p {
 
 .navbar #home {
   margin: 0 auto;
-  background-image: url("home.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -368px;
 }
 
 .navbar #home_green {
   margin: 0 auto;
-  background-image: url("home green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -431px;
 }
 
 .navbar #about {
   top: 56px;
-  background-image: url("about.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -5.5px;
 }
 
 .navbar #about_green {
   top: 56px;
-  background-image: url("about green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -68.5px;
 }
 
 .navbar #skills {
   top: 112px;
-  background-image: url("skills.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -839.5px;
 }
 
 .navbar #skills_green {
   top: 112px;
-  background-image: url("skills green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -902.5px;
 }
 
 .navbar #my_work {
   top: 168px;
-  background-image: url("my_work.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -604px;
 }
 
 .navbar #my_work_green {
   top: 168px;
-  background-image: url("my_work green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -667px;
 }
 
 .navbar #contact {
   top: 219px;
-  background-image: url("contact.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -132px;
 }
 
 .navbar #contact_green {
   top: 219px;
-  background-image: url("contact green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -195px;
 }
 
 .navbar #button_panel {
@@ -198,7 +207,7 @@ p {
 
 .navbar .buttons {
   position: absolute;
-  background-size: 22px 23px;
+  /*background-size: 22px 23px;*/
   width: 60px;
   height: 51px;
 }
@@ -229,7 +238,7 @@ p {
 }
 
 .navbar ul {
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -238,11 +247,10 @@ p {
 }
 
 .navbar ul li {
+  display: block;
   width: 60px;
   height: 30px;
-  background-size: 13.93333px 15px;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 ul a {
@@ -252,36 +260,43 @@ ul a {
 }
 
 #twitter {
-  background-image: url("twitter.png");
-  background-size: 20px !important;
+  background-image: url("spritesheet.png");
+  background-position: 0px -975px;
 }
 
 #twitter:hover {
-  background-image: url("twitter green.png");
+  background-image: url("spritesheet.png");
+  background-position: 0px -1035px;
 }
 
 #linkedin {
-  background-image: url("linkedin.png");
+  background-image: url("spritesheet.png");
+  background-position: 3px -500px;
 }
 
 #linkedin:hover {
-  background-image: url("linkedin green.png");
+  background-image: url("spritesheet.png");
+  background-position: 3px -555px;
 }
 
 #facebook {
-  background-image: url("facebook.png");
+  background-image: url("spritesheet.png");
+  background-position: 3px -264px;
 }
 
 #facebook:hover {
-  background-image: url("facebook green.png");
+  background-image: url("spritesheet.png");
+  background-position: 3px -319px;
 }
 
 #rss {
-  background-image: url("rss.png");
+  background-image: url("spritesheet.png");
+  background-position: 3px -736px;
 }
 
 #rss:hover {
-  background-image: url("rss green.png");
+  background-image: url("spritesheet.png");
+  background-position: 3px -791px;
 }
 
 #silver_star {

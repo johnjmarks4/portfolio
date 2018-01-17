@@ -15,27 +15,28 @@
 }
 
 #home:hover {
-  background-image: url("home green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -431px;
 }
 
 #about:hover {
-  background-image: url("about green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -68.5px;
 }
 
 #skills:hover {
-  background-image: url("skills green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -902.5px;
 }
 
 #my_work:hover {
-  background-image: url("my_work green.png");
-}
-
-#about:hover {
-  background-image: url("about green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -667px;
 }
 
 #contact:hover {
-  background-image: url("contact green.png");
+  background-image: url("spritesheet.png");
+  background-position: -1px -195px;
 }
 
 .navbar .buttons:hover .text_display, .text_display:hover {
