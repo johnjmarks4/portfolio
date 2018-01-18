@@ -1,3 +1,11 @@
+.navbar .buttons {
+  position: absolute;
+  width: 60px;
+  height: 51px;
+  margin: 0 auto;
+  background-image: url("spritesheet.png");
+}
+
 .text_display {
   font-size: 11px;
   letter-spacing: 1.25px;
@@ -14,28 +22,67 @@
   color: #98ff98;   
 }
 
-#home:hover {
-  background-image: url("spritesheet.png");
+.navbar #home {
+  background-position: -1px -368px;
+}
+
+.navbar #home_green, #home:hover {
   background-position: -1px -431px;
 }
 
+.navbar #about {
+  top: 56px;
+  background-position: -1px -5.5px;
+}
+
+.navbar #about_green {
+  top: 56px;
+  background-position: -1px -68.5px;
+}
+
+.navbar #skills {
+  top: 112px;
+  background-position: -1px -839.5px;
+}
+
+.navbar #skills_green {
+  top: 112px;
+  background-position: -1px -902.5px;
+}
+
+.navbar #my_work {
+  top: 168px;
+  background-position: -1px -604px;
+}
+
+.navbar #my_work_green {
+  top: 168px;
+  background-position: -1px -667px;
+}
+
+.navbar #contact {
+  top: 219px;
+  background-position: -1px -132px;
+}
+
+.navbar #contact_green {
+  top: 219px;
+  background-position: -1px -195px;
+}
+
 #about:hover {
-  background-image: url("spritesheet.png");
   background-position: -1px -68.5px;
 }
 
 #skills:hover {
-  background-image: url("spritesheet.png");
   background-position: -1px -902.5px;
 }
 
 #my_work:hover {
-  background-image: url("spritesheet.png");
   background-position: -1px -667px;
 }
 
 #contact:hover {
-  background-image: url("spritesheet.png");
   background-position: -1px -195px;
 }
 
@@ -58,4 +105,44 @@
 
 .navbar .text_display h {
   line-height: 51px !important;
+}
+
+.navbar ul li {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image: url("spritesheet.png");
+}
+
+#twitter {
+  background-position: 0px -975px;
+}
+
+#twitter:hover {
+  background-position: 0px -1035px;
+}
+
+#linkedin {
+  background-position: 3px -500px;
+}
+
+#linkedin:hover {
+  background-position: 3px -555px;
+}
+
+#facebook {
+  background-position: 3px -264px;
+}
+
+#facebook:hover {
+  background-position: 3px -319px;
+}
+
+#rss {
+  background-position: 3px -736px;
+}
+
+#rss:hover {
+  background-position: 3px -791px;
 }
