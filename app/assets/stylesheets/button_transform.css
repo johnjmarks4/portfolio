@@ -88,9 +88,9 @@
 
 .navbar .buttons:hover .text_display, .text_display:hover {
   background-color: #181818;
-  -webkit-transition: background-color 100ms linear, opacity 1s linear;
-  -ms-transition: background-color 100ms linear, opacity 1s linear;
-  transition: background-color 100ms linear, opacity 1s linear;
+  -webkit-transition: background-color 100ms linear, opacity 0.25s linear;
+  -ms-transition: background-color 100ms linear, opacity 0.25s linear;
+  transition: background-color 100ms linear, opacity 0.25s linear;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
