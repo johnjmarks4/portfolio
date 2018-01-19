@@ -29,14 +29,16 @@ html, body {
 }
 
 h1, p {
-  letter-spacing: -1px;
   text-align: center;
   font-family: "Montserrat", "Tahoma";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
+  letter-spacing: -1px;
   font-family: "Montserrat", "Tahoma";
-  color: #cfcfcf;
+  color: #98ff98;
   font-size: 1.6em;
   line-height: 36px;
   font-weight: 700;
@@ -44,7 +46,8 @@ h1 {
 
 p {
   font-size: 1.18em;
-  color: #7a7a7a;
+  color: #cfcfcf;
+  letter-spacing: 1px;
 }
 
 .navbar {
@@ -153,16 +156,19 @@ p {
 #contact_me {
   display: block;
   text-decoration: none;
-  width: 131px;
-  height: 33.4px;
-  line-height: 28px;
+  width: 157.2px;
+  height: 43.4px;
+  line-height: 40px;
   text-align: center;
-  letter-spacing: 3.5px;
+  letter-spacing: 5px;
   font-family: "Montserrat", "Tahoma";
   font-size: 11px;
   color: #f65026;
   border: thin solid #f65026;
   border-radius: 3px;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
 }
 
 #contact_me:hover {
