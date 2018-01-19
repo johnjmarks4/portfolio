@@ -38,10 +38,14 @@ h1, p {
 h1 {
   letter-spacing: -1px;
   font-family: "Montserrat", "Tahoma";
-  color: #98ff98;
   font-size: 1.6em;
   line-height: 36px;
   font-weight: 700;
+  color: #cfcfcf;
+}
+
+#john_marks {
+  color: #98ff98;
 }
 
 p {
@@ -321,4 +325,109 @@ ul a {
   position: relative;
   right: 147px;
   color: #f65026;
+}
+
+#contact_page #contact {
+  float: left;
+  color: #98ff98;
+  font-size: 4.1em !important;
+  margin-bottom: 15px;
+}
+
+#contact_page #me {
+  float: right;
+  color: #f65026;
+  font-size: 4.1em !important;
+  margin-bottom: 15px;
+  position: relative;
+  right: 334px;
+}
+
+#contact_page .line {
+  position: relative;
+}
+
+#contact_page p {
+  float: left;
+  position: relative;
+  top: 15px;
+  text-align: left !important;
+}
+
+#contact_page {
+  margin: 0 auto !important;
+  width: 645.1px;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  top: 140px;
+}
+
+#contact_form {
+  float: left;
+  position: relative;
+  top: 20px;
+  color: #9a9a9aa1;
+}
+
+#contact_form input {
+  width: 644.61px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #252627;
+  border: none;
+}
+
+#contact_form input:focus {
+  outline: none;
+}
+
+#contact_form #name {
+  width: 317.305px;
+  margin-right: 7px;
+}
+
+#contact_form #email {
+  width: 317.305px;
+}
+
+#contact_form #message {
+  padding: 20px;
+  height: 150px;
+  width: 644.61px;
+  font-size: 16px;
+  background-color: #252627;
+  border: none;
+}
+
+#contact_form #message:focus {
+  outline: none;
+}
+
+#send_button {
+  float: right;
+  width: 64.56px !important;
+  height: 30px !important;
+  padding: 0px !important;
+  display: block;
+  text-decoration: none;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Montserrat", "Tahoma";
+  font-size: 11px !important;
+  color: #98ff98;
+  border: thin solid #98ff98 !important;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: #3f3f3f !important;
+}
+
+#send_button:hover {
+  color: #3f3f3f;
+  background-color: #98ff98 !important;
 }
