@@ -9,56 +9,25 @@
     <ul>
       <% @skills.each do |skill| %>
         <% @highlighted.include?(skill) ? hl = "highlight" : hl = "no_highlight" %>
-        <%= content_tag(:li, skill.upcase, id: skill.gsub(/ /, '_'), class: hl,
-                        onclick: "lightButton(this)") %>
+        <%= content_tag(:li, skill.upcase, id: skill.gsub(/ /, '_'), class: hl, onclick: "lightButton(this)") %>
       <% end %>
     </ul>
   </div>
   <div id="skills_right_pane">
+    <%= content_tag(:div, "", id: "r_button", onclick: "nextButton(this)") %>
     <div id="skills_project_img"></div>
+    <%= content_tag(:div, "", id: "l_button", onclick: "prevButton(this)") %>
   </div>
 </div>
-
-<script>
-  function lightButton(i) {
-    var previous = document.querySelector('.selected');
-
-    if (previous != null && previous.id != i.id) {
-      previous.className = "highlight";
-    };
-
-    if (i.className == "highlight") {
-      i.className = "selected";
-    };
-  };
-</script>
 
 <script>
   var image = document.createElement('img');
   var left_pane = document.querySelector('.left_pane');
   var bullets = left_pane.querySelectorAll('li');
-
-  var urls = new Object();
   
-  urls['ruby_on_rails'] = 'https://arcane-stream-86572.herokuapp.com';
-  urls['object-oriented_programming'] = 'https://github.com/johnjmarks4/chess';
-  urls['tdd'] = 'https://github.com/johnjmarks4/chess/blob/master/specs/game_spec.rb';
-  urls['cs_fundamentals'] = 'https://github.com/johnjmarks4/n_queens';
-
   bullets.forEach( (bullet) => {
     bullet.addEventListener('click', function() {
-      var image_name = bullet.id;
-      var link = document.createElement('a');
-      if (image_name == "css3" || image_name == "html5") {
-        var image_name = "ruby_on_rails";
-      }
-      var href = urls[image_name];
-      link.setAttribute('href', href);
-      console.log(image_name);
-      var pane = document.querySelector('#skills_project_img');
-      pane.appendChild(link);
-      image.setAttribute('src', '/assets/'.concat(image_name.concat(".jpg")));
-      link.appendChild(image);
-    })
-  })
+      changeImage(bullet.id);
+    });
+  });
 </script>

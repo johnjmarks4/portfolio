@@ -81,7 +81,7 @@ p {
   font-weight: bold;
   line-height: 26px;
   color: rgb(237, 93, 31);
-  background-color: #070707; /*#3f3f3f*/
+  background-color: #070707;
   text-align: center;
   vertical-align: bottom;
 }
@@ -195,29 +195,6 @@ ul a {
   height: 30px;
 }
 
-#silver_star {
-  position: relative;
-  left: 100px;
-  width: 50%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.engraved_text {
-  display: block;
-  margin: 0 auto;
-  font-family: "Century Gothic", "HelveticaNeueLT Pro 45 Lt",
-                sans-serif;
-  text-shadow: -1px -1px 1px #000;
-  position: relative;
-  bottom: 200px;
-}
-
-.engraved_text p {
-  color: #c0c0c0;
-}
-
 #skills_page {
   width: 100%;
   height: 100%;
@@ -239,10 +216,14 @@ ul a {
 }
 
 #skills_right_pane {
+  position: absolute;
+  right: 5.6204%;
+  top: 23.1%;
   order: 2;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: center;
+  align-items: center;
 }
 
 .left_pane ul {
@@ -310,16 +291,45 @@ li.selected {
   margin-bottom: 26px;
 }
 
+#skills_page #l_button {
+  order: 1;
+  height: 50px;
+  width: 25px;
+  background-image: url("arrows");
+  background-position: left;
+  margin-right: 5px;
+}
+
+#skills_page #l_button:active {
+  background-image: url("arrows green");
+}
+
 #skills_project_img {
-  position: absolute;
-  right: 5.6204%;
-  top: 23.1%; /*23.1%;*/
-  height: 100%;
+  order: 2;
+  height: 318.5px !important;
+  width: 509.19px;
   object-fit: cover;
+  background-color: #313131;
+  background-image: url("image");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#skills_page #r_button {
+  order: 3;
+  height: 50px;
+  width: 25px;
+  background-image: url("arrows");
+  background-position: right;
+  margin-left: 5px;
+}
+
+#skills_page #r_button:active {
+  background-image: url("arrows green");
 }
 
 #skills_project_img img {
-  height: 50%; /*60%*/
+  height: 100%;
 }
 
 #about_page {
