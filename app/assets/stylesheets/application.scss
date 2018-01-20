@@ -256,7 +256,7 @@ ul a {
   font-size: 0.85em;
   font-weight: bold;
   color: #999;
-  background-color: #545454;
+  background-color: #313131;
   box-shadow: 1px 1px 0 rgba(0,0,0,0.25);
   border: thin solid #222;
   padding: 8px 5px;
@@ -264,6 +264,21 @@ ul a {
   margin: 8.3px 3px;
   position: relative;
   right: 3px;
+}
+
+li.highlight {
+  background: linear-gradient(to bottom, #545454 50%, #3f3f3f 50%);
+}
+
+li.highlight:hover {
+  color: #98ff98;
+  text-shadow: 0 0 1px #98ff98; /*0 0 10px #98ff98, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #97FF98;*/
+}
+
+li.selected {
+  background: linear-gradient(to bottom, #545454 50%, #3f3f3f 50%);
+  color: #bdffbd;
+  text-shadow: 0 0 6px #98ff98;
 }
 
 .left_pane h1 {

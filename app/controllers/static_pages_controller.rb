@@ -11,6 +11,8 @@ class StaticPagesController < ApplicationController
                "css3", "object-oriented programming",
                "bootstrap", "git", "cs fundamentals",
                "postgresql", "jquery", "html5", "tdd"]
+    @highlighted = ["ruby on rails", "javascript", "cs fundamentals",
+                    "css3", "html5", "object-oriented programming", "tdd"]
   end
 
   def my_work
