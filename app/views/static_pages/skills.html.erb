@@ -15,13 +15,14 @@
   </div>
   <div id="skills_right_pane">
     <%= content_tag(:div, "", id: "r_button", onclick: "nextButton(this)") %>
-    <div id="skills_project_img"></div>
+    <div id="skills_project_img">
+      <div id="slide"></div>
+    </div>
     <%= content_tag(:div, "", id: "l_button", onclick: "prevButton(this)") %>
   </div>
 </div>
 
 <script>
-  var image = document.createElement('img');
   var left_pane = document.querySelector('.left_pane');
   var bullets = left_pane.querySelectorAll('li');
   

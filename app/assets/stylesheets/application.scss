@@ -245,6 +245,7 @@ ul a {
   margin: 8.3px 3px;
   position: relative;
   right: 3px;
+  cursor: pointer;
 }
 
 li.highlight {
@@ -298,6 +299,7 @@ li.selected {
   background-image: url("arrows");
   background-position: left;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 #skills_page #l_button:active {
@@ -313,6 +315,33 @@ li.selected {
   background-image: url("image");
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+#skills_project_img img {
+  position: absolute;
+  /*height: 100%;*/
+  display: block;
+  width: 509.19px;
+  height: 318.5px;
+  left: 100%;
+}
+
+#skills_project_img img.show {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transition: 0.35s;
+}
+
+#slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 509.19px;
 }
 
 #skills_page #r_button {
@@ -322,14 +351,11 @@ li.selected {
   background-image: url("arrows");
   background-position: right;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 #skills_page #r_button:active {
   background-image: url("arrows green");
-}
-
-#skills_project_img img {
-  height: 100%;
 }
 
 #about_page {
@@ -456,3 +482,8 @@ li.selected {
   color: #3f3f3f;
   background-color: #98ff98 !important;
 }
+
+#preload-01 { background: url("javascript") no-repeat -9999px -9999px; }
+#preload-02 { background: url("ruby on rails") no-repeat -9999px -9999px; }
+#preload-03 { background: url("cs fundamentals") no-repeat -9999px -9999px; }
+#preload-04 { background: url("tdd") no-repeat -9999px -9999px; }

@@ -66,13 +66,26 @@ function changeLink(imageName) {
   return link;
 };
 
-/* refactor this to avoid coupling */
+/* refactor this */
 function changeImage(imageName) {
   if (imageName == "css3" || imageName == "html5") {
     var imageName = "ruby_on_rails";
   }
 
+  var prevImage = document.querySelector(".show");
+
+  var image = document.createElement('img');
   image.setAttribute('src', '/assets/'.concat(imageName.concat(".jpg")));
   var link = changeLink(imageName);
   link.appendChild(image);
+
+  setTimeout(function() {
+    image.classList.toggle('show');
+  }, 100);
+
+  setTimeout(function() {
+    var oldLink = prevImage.parentElement;
+    var con = document.getElementById("skills_project_img");
+    con.removeChild(oldLink);
+  }, 500);
 };
