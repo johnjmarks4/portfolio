@@ -369,12 +369,22 @@ li.selected {
 #about_page #about {
   float: left;
   color: #98ff98;
+  margin-bottom: 30px;
+}
+
+#about_page .left_pane {
+  width: 544.61px;
+}
+
+#about_page .left_pane p {
+  margin: 7.5px 0;
+  line-height: 20px;
 }
 
 #about_page #me {
   float: right;
   position: relative;
-  right: 147px;
+  right: 282px;
   color: #f65026;
 }
 
