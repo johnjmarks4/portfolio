@@ -1,6 +1,16 @@
-#selfie {
+#selfie_container {
+  order: 2;
   float: right;
-  margin: 35px 38px;
+  position: relative;
+  margin-top: 2.5547%;
+  right: 2.7737%;
+  width: 242.45px;
+  display: flex;
+  flex-flow: column;
+}
+
+#selfie {
+  order: 1;
   object-fit: cover;
   box-sizing: content-box;
   height: 175.5px;
@@ -50,10 +60,11 @@
 }
 
 #selfie_caption {
-  text-decoration: none !important;
+  order: 2;
   position: absolute;
-  top: 223px;
-  right: 42.5px;
+  right: 0.35%;
+  top: 99%;
+  text-decoration: none !important;
   font-family: "Permanent Marker";
   font-style: normal;
   font-variant: normal;

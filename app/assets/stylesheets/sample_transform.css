@@ -16,22 +16,21 @@
 .sample_description {
   overflow: hidden;
   position: relative;
-  bottom: 112.675px;
-  width: 1em;
-  height: 1em;
+  bottom: 53.0659%;
+  width: 1em; /*4.075%;*/
+  height: 1em; /*6.6%;*/
   visibility: hidden;
   display: block;
   margin: 0 auto;
   background: rgb(237, 93, 31); 
   border-radius: 100%;
-  -webkit-transition: all .1s ease-in-out; /* Safari */
+  -webkit-transition: all .1s ease-in-out;
   transition: all .1s linear;        
 }
 
 .sample_containers:hover .sample_description {
   visibility: visible;
   transform: scale(10, 10);
-  bottom: 112.675px;
 }
 
 .sample_text, .sample_text:hover, .sample_text:active, 
@@ -51,6 +50,8 @@
   line-height: 0px;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
+  bottom: 58.5%;
+  transform: translateY(58.5%);
 }
 
 .sample_text p { 

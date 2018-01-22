@@ -3,13 +3,12 @@
 
 html, body {
   position: relative;
-  width: 1370px;
+  width: 100%;
   height: 100%;
   font-family: "Lato";
   font-weight: 400;
   font-size: 14px;
   background-color: #3f3f3f;
-  overflow: hidden;
 }
 
 ::selection {
@@ -22,10 +21,15 @@ html, body {
 }
 
 #intro {
+  order: 1;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#intro p, #intro h1 {
+  white-space: nowrap;
 }
 
 h1, p {
@@ -37,7 +41,6 @@ h1, p {
 
 h1 {
   letter-spacing: -1px;
-  font-family: "Montserrat", "Tahoma";
   font-size: 1.6em;
   line-height: 36px;
   font-weight: 700;
@@ -64,15 +67,9 @@ p {
   background-color: #181818;
 }
 
-/*.navbar #logo_container {
-  background-color: #070707;
-  width: 59px;
-  height: 80.88px;
-}*/
-
 .navbar #logo {
   width: 59px;
-  height: 80.88px;
+  height: 110.88px; /*80.88px;*/
   margin: 0 auto;
   position: relative;
   font-size: 25px;
@@ -86,9 +83,8 @@ p {
   vertical-align: bottom;
 }
 
-#center_column {
+#my_work_page {
   position: relative;
-  left: 60px;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -100,6 +96,8 @@ p {
 .sample_containers {
   width: 33.3333%;
   height: 33.3333%;
+  min-width: 231.98px;
+  margin-left: 60px;
 }
 
 .sample_containers img {
@@ -108,8 +106,9 @@ p {
   object-fit: cover;
 }
 
-#sample_container1 {
+#sample_container1 { 
   background-color: #4267b2;
+  overflow: hidden;
 }
 
 #sample_container1 img {
@@ -133,6 +132,7 @@ p {
   float: right;
   height: 75px;
   width: 503px;
+  min-height: 270px;
 }
 
 .navbar .buttons {
@@ -186,7 +186,7 @@ p {
   bottom: 20px;
   left: 0;
   width: 60px;
-  height: 120px;
+  min-height: 120px;
 }
 
 ul a {
@@ -203,7 +203,7 @@ ul a {
   justify-content: center;
 }
 
-.left_pane {
+#skills_left_pane, #about_left_pane {
   order: 1;
   display: flex;
   flex-flow: column;
@@ -212,7 +212,18 @@ ul a {
   height: 100%;
   justify-content: center;
   position: absolute;
+}
+
+#skills_left_pane {
   left: 10%;
+}
+
+#about_left_pane {
+  position: absolute !important;
+  margin: 7.5px 0;
+  line-height: 20px;
+  left: 142px !important;
+  transform: none !important;
 }
 
 #skills_right_pane {
@@ -226,13 +237,13 @@ ul a {
   align-items: center;
 }
 
-.left_pane ul {
+#skills_left_pane ul {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
 }
 
-.left_pane li {
+#skills_left_pane li {
   font-family: "Montserrat", sans-serif;
   font-size: 0.85em;
   font-weight: bold;
@@ -253,17 +264,17 @@ li.highlight {
 }
 
 li.highlight:hover {
-  color: #98ff98;
+  color: #98ff98 !important;
   text-shadow: 0 0 1px #98ff98; /*0 0 10px #98ff98, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #97FF98;*/
 }
 
 li.selected {
   background: linear-gradient(to bottom, #545454 50%, #3f3f3f 50%);
-  color: #bdffbd;
+  color: #bdffbd !important;
   text-shadow: 0 0 6px #98ff98;
 }
 
-.left_pane h1 {
+#skills_left_pane h1, #about_left_pane h1 {
   font-size: 4.1em !important;
   text-align: left;
   margin: 0;
@@ -271,22 +282,23 @@ li.selected {
   font-size: 48px;
 }
 
-.left_pane #headline1 {
+#skills_left_pane #headline1 {
   float: left;
   color: #f65026;
 }
 
-.left_pane #ampersand {
+#skills_left_pane #ampersand {
   float: right;
   position: relative;
   right: 207px;
 }
 
-.left_pane #headline2 {
+#skills_left_pane #headline2 {
   color: #98ff98;
+  margin-bottom: 24px;
 }
 
-.left_pane p {
+#skills_left_pane p, #about_left_pane p {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 26px;
@@ -497,3 +509,174 @@ li.selected {
 #preload-02 { background: url("ruby on rails") no-repeat -9999px -9999px; }
 #preload-03 { background: url("cs fundamentals") no-repeat -9999px -9999px; }
 #preload-04 { background: url("tdd") no-repeat -9999px -9999px; }
+
+@media only screen and (max-height: 597px) and (max-width: 1148px) {
+  
+  #skills_left_pane { top: auto !important; }
+
+}
+
+/*----------------- navbar -----------------*/
+
+@media only screen and (max-height: 523px) {
+
+  body {
+    position: relative;
+    top: 60px;
+  }
+
+  .navbar #button_panel {
+    top: auto;
+    bottom: 153px;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 60px;
+    /* replace with flex-shrink */
+    min-width: 650px;
+  }
+
+  .navbar #logo {
+    float: left;
+    width: 110.88px;
+    height: 59px;
+  }
+
+  .navbar ul {
+    height: 30px;
+    min-height: 30px;
+    min-width: 131px;
+    margin-top: 15px;
+    margin-right: 10px;
+    left: auto;
+    display: block;
+    float: right;
+    position: static;
+  }
+
+  .navbar ul li, .navbar ul a { 
+    display: inline-block !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-position-x: 35% !important;
+  }
+
+  .navbar #button_panel {
+    margin-top: auto;
+    bottom: auto;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 60px;
+    min-height: 60px;
+    text-align: center;
+    min-width: 387px;
+  }
+
+  .navbar .buttons { 
+    float: left;
+    margin-left: 5.6% !important;
+    display: inline-block; 
+    top: auto !important;
+    position: static !important;
+  }
+
+  .navbar #home, #home_green {
+    /*margin-left: 0 !important;*/
+  }
+
+  .sample_containers {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1148px) {
+
+/*--------------- home page ---------------*/
+
+  .column {
+    display: flex;
+    flex-flow: column !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 597px;
+    justify-content: space-evenly !important;
+  }
+
+  #intro, .left_pane {
+    order: 1;
+    position: relative !important;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  #selfie_container, .right_pane {
+    order: 2;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #skills_left_pane { 
+    left: 0 !important;
+    top: 23.1%;
+    transform: none !important;
+    height: auto !important;
+  }
+
+  #skills_left_pane, #headline2, #headline1, #ampersand, #skills_left_pane .line {
+    margin: 0 auto !important;
+  }
+
+  #skills_left_pane h1 { font-size: 3.4em !important; }
+
+  #headline1 {
+    margin-right: 0px !important;
+    margin-bottom: 5px !important;
+  }
+
+  #headline2 { margin-bottom: 31px !important; }
+
+  #ampersand {
+    right: 0;
+    left: 10px;
+  }
+
+  #skills_left_pane ul { justify-content: center; }
+
+  #skills_left_pane p {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  #skills_right_pane {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 446.81px;
+    height: 250.01453px;
+  }
+
+  #skills_left_pane li { margin: 3px 3px; }
+
+  #skills_project_img { height: 250.01453px !important; }
+
+  #skills_project_img img {
+    width: 446.81px !important;
+    height: 250.01453px !important;
+  }
+
+  #selfie_container {
+    bottom: 70px;
+    min-height: 189px;
+  }
+
+  #intro { 
+    margin-bottom: 120px; 
+    min-height: 241.39px;
+  }
+}

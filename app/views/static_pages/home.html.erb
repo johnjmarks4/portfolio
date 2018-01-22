@@ -1,5 +1,5 @@
-<div class="page">
-  <div id="intro">
+<div class="column">
+  <div id="intro" class="left_pane">
     <h1 id="john_marks">John Marks, Web Developer.</h1>
     <p>I would love to help create your website or application.</p>
     <p>Front-to-back, design-to-deployment web development services.</p>
@@ -7,7 +7,10 @@
     <p>Or drop me an email at <b>johnjmarks4@gmail.com</b>.</p>
     <%= link_to "CONTACT ME", contact_path, id: "contact_me" %>
   </div>
-</div>
 
-<%= link_to image_tag("me"), my_work_path, id: "selfie" %>
-<%= link_to "See My Projects", my_work_path, id: "selfie_caption" %>
+
+  <div id="selfie_container" class="right_pane">
+    <%= link_to image_tag("me"), my_work_path, id: "selfie" %>
+    <%= link_to "See My Projects", my_work_path, id: "selfie_caption" %>
+  </div>
+</div>

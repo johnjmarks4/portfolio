@@ -1,5 +1,5 @@
-<div id="skills_page">
-  <div class="left_pane">
+<div id="skills_page" class="column">
+  <div id="skills_left_pane" class="left_pane">
     <div class="line">
       <h1 id="headline1">Skills</h1>
       <h1 id="ampersand">&</h1>
@@ -13,7 +13,7 @@
       <% end %>
     </ul>
   </div>
-  <div id="skills_right_pane">
+  <div id="skills_right_pane" class="right_pane">
     <%= content_tag(:div, "", id: "r_button", onclick: "nextButton(this)") %>
     <div id="skills_project_img">
       <div id="slide"></div>
