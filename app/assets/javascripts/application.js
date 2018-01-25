@@ -3,8 +3,8 @@
 //= require_tree .
 
 var imageNames = ["ruby_on_rails", "javascript", "css3", 
-                      "object-oriented_programming", 
-                      "cs_fundamentals", "html5", "tdd"];
+                  "object-oriented_programming", 
+                  "cs_fundamentals", "html5", "tdd"];
 
 function lightButton(i) {
   var previous = document.querySelector('.selected');

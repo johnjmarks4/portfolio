@@ -1,0 +1,925 @@
+/* @import "bootstrap-sprockets";
+@import "bootstrap"; */
+/* line 5, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #3f3f3f;
+}
+
+/* line 15, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+::selection {
+  background: #FF8300;
+  color: white;
+}
+
+/* line 19, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+::-moz-selection {
+  background: #FF8300;
+  color: white;
+}
+
+/* line 24, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#intro {
+  order: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 32, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#intro p, #intro h1 {
+  white-space: nowrap;
+}
+
+/* line 36, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+h1, p {
+  text-align: center;
+  font-family: "Montserrat", "Tahoma";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 43, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+h1 {
+  letter-spacing: -1px;
+  font-size: 1.6em;
+  line-height: 36px;
+  font-weight: 700;
+  color: #cfcfcf;
+}
+
+/* line 51, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#john_marks {
+  color: #98ff98;
+}
+
+/* line 55, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+p {
+  font-size: 1.18em;
+  color: #cfcfcf;
+  letter-spacing: 1px;
+}
+
+/* line 61, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  z-index: 99;
+  background-color: #181818;
+}
+
+/* line 71, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.navbar #logo {
+  width: 59px;
+  height: 110.88px;
+  /*80.88px;*/
+  margin: 0 auto;
+  position: relative;
+  font-size: 25px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica";
+  font-weight: bold;
+  line-height: 26px;
+  color: #ed5d1f;
+  background-color: #070707;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+/* line 87, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#my_work_page {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 46px 23px;
+  padding: 0;
+}
+
+/* line 97, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.sample_containers {
+  width: 33.3333%;
+  height: 33.3333%;
+  min-width: 231.98px;
+  margin-left: 60px;
+}
+
+/* line 104, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.sample_containers img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* line 110, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#sample_container1 {
+  background-color: #4267b2;
+  overflow: hidden;
+}
+
+/* line 115, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#sample_container1 img {
+  order: 1;
+  background-color: #4267b2;
+  object-fit: contain;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -150.69px !important;
+  width: 301.38666px;
+  margin: 0 auto;
+}
+
+/* line 127, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#sample_container2 img {
+  order: 2;
+}
+
+/* line 131, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.navbar #button_panel {
+  display: table;
+  float: right;
+  height: 75px;
+  width: 503px;
+  min-height: 270px;
+}
+
+/* line 139, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.navbar .buttons {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 144, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.navbar .buttons h {
+  line-height: 75px;
+}
+
+/* line 148, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.navbar #button_panel {
+  position: absolute;
+  top: 50%;
+  margin-top: -135px;
+  width: 60px;
+  height: 270px;
+}
+
+/* line 156, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#button_panel a {
+  width: 60px;
+  height: 51px;
+}
+
+/* line 161, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_me {
+  display: block;
+  text-decoration: none;
+  width: 157.2px;
+  height: 43.4px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "Montserrat", "Tahoma";
+  font-size: 11px;
+  color: #f65026;
+  border: thin solid #f65026;
+  border-radius: 3px;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;
+}
+
+/* line 179, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_me:hover {
+  background-color: #f65026;
+  color: #3f3f3f;
+}
+
+/* line 184, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+.navbar ul {
+  object-fit: contain;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 60px;
+  min-height: 120px;
+}
+
+/* line 193, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+ul a {
+  display: block;
+  width: 60px;
+  height: 30px;
+}
+
+/* line 199, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+/* line 207, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane, #about_left_pane {
+  order: 1;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto !important;
+  width: 410px;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+}
+
+/* line 218, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane {
+  left: 10%;
+}
+
+/* line 222, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#about_left_pane {
+  position: absolute !important;
+  margin: 7.5px 0;
+  line-height: 20px;
+  left: 142px !important;
+  transform: none !important;
+}
+
+/* line 230, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_right_pane {
+  position: absolute;
+  right: 5.6204%;
+  top: 23.1%;
+  order: 2;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 241, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane ul {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+/* line 247, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #999;
+  background-color: #313131;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+  border: thin solid #222;
+  padding: 8px 5px;
+  border-radius: 3px;
+  margin: 8.3px 3px;
+  position: relative;
+  right: 3px;
+  cursor: pointer;
+}
+
+/* line 263, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+li.highlight {
+  background: linear-gradient(to bottom, #545454 50%, #3f3f3f 50%);
+}
+
+/* line 267, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+li.highlight:hover {
+  color: #98ff98 !important;
+  text-shadow: 0 0 1px #98ff98;
+  /*0 0 10px #98ff98, 0 0 20px #98ff98, 0 0 30px #98ff98, 0 0 40px #98ff98, 0 0 55px #98ff98, 0 0 75px #97FF98;*/
+}
+
+/* line 272, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+li.selected {
+  background: linear-gradient(to bottom, #545454 50%, #3f3f3f 50%);
+  color: #bdffbd !important;
+  text-shadow: 0 0 6px #98ff98;
+}
+
+/* line 278, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane h1, #about_left_pane h1 {
+  font-size: 4.1em !important;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 48px;
+}
+
+/* line 286, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane #headline1 {
+  float: left;
+  color: #f65026;
+}
+
+/* line 291, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane #ampersand {
+  float: right;
+  position: relative;
+  right: 207px;
+}
+
+/* line 297, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane #headline2 {
+  color: #98ff98;
+  margin-bottom: 24px;
+}
+
+/* line 302, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_left_pane p, #about_left_pane p {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 26px;
+}
+
+/* line 308, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_page #l_button {
+  order: 1;
+  height: 50px;
+  width: 25px;
+  background-image: url("arrows");
+  background-position: left;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* line 318, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_page #l_button:active {
+  background-image: url("arrows green");
+}
+
+/* line 322, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_project_img {
+  order: 2;
+  height: 318.5px !important;
+  width: 509.19px;
+  object-fit: cover;
+  background-color: #313131;
+  background-image: url("image");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+/* line 336, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_project_img img {
+  position: absolute;
+  /*height: 100%;*/
+  display: block;
+  width: 509.19px;
+  height: 318.5px;
+  left: 100%;
+}
+
+/* line 345, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_project_img img.show {
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transition: 0.35s;
+}
+
+/* line 353, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 509.19px;
+}
+
+/* line 360, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_page #r_button {
+  order: 3;
+  height: 50px;
+  width: 25px;
+  background-image: url("arrows");
+  background-position: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* line 370, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#skills_page #r_button:active {
+  background-image: url("arrows green");
+}
+
+/* line 374, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#about_page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+/* line 382, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#about_page #about {
+  float: left;
+  color: #98ff98;
+  margin-bottom: 30px;
+}
+
+/* line 388, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#about_page .left_pane {
+  width: 544.61px;
+}
+
+/* line 392, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#about_page .left_pane p {
+  margin: 7.5px 0;
+  line-height: 20px;
+}
+
+/* line 397, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#about_page #me {
+  float: right;
+  position: relative;
+  right: 282px;
+  color: #f65026;
+}
+
+/* line 404, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_page #contact {
+  float: left;
+  color: #98ff98;
+  font-size: 4.1em !important;
+  margin-bottom: 15px;
+}
+
+/* line 411, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_page #me {
+  float: right;
+  color: #f65026;
+  font-size: 4.1em !important;
+  margin-bottom: 15px;
+  position: relative;
+  right: 334px;
+}
+
+/* line 420, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_page .line {
+  position: relative;
+}
+
+/* line 424, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_page p {
+  float: left;
+  position: relative;
+  top: 15px;
+  text-align: left !important;
+}
+
+/* line 431, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_page {
+  margin: 0 auto !important;
+  width: 645.1px;
+  height: 100%;
+  position: absolute;
+  left: 10%;
+  top: 140px;
+}
+
+/* line 440, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_form {
+  float: left;
+  position: relative;
+  top: 20px;
+  color: #9a9a9aa1;
+}
+
+/* line 447, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_form input {
+  width: 644.61px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #252627;
+  border: none;
+}
+
+/* line 457, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_form input:focus {
+  outline: none;
+}
+
+/* line 461, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_form #name {
+  width: 317.305px;
+  margin-right: 7px;
+}
+
+/* line 466, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_form #email {
+  width: 317.305px;
+}
+
+/* line 470, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_form #message {
+  padding: 20px;
+  height: 150px;
+  width: 644.61px;
+  font-size: 16px;
+  background-color: #252627;
+  border: none;
+}
+
+/* line 479, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#contact_form #message:focus {
+  outline: none;
+}
+
+/* line 483, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#send_button {
+  float: right;
+  width: 64.56px !important;
+  height: 30px !important;
+  padding: 0px !important;
+  display: block;
+  text-decoration: none;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Montserrat", "Tahoma";
+  font-size: 11px !important;
+  color: #98ff98;
+  border: thin solid #98ff98 !important;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: #3f3f3f !important;
+}
+
+/* line 504, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#send_button:hover {
+  color: #3f3f3f;
+  background-color: #98ff98 !important;
+}
+
+/* line 509, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#preload-01 {
+  background: url("javascript") no-repeat -9999px -9999px;
+}
+
+/* line 510, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#preload-02 {
+  background: url("ruby on rails") no-repeat -9999px -9999px;
+}
+
+/* line 511, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#preload-03 {
+  background: url("cs fundamentals") no-repeat -9999px -9999px;
+}
+
+/* line 512, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+#preload-04 {
+  background: url("tdd") no-repeat -9999px -9999px;
+}
+
+@media only screen and (max-height: 597px) and (max-width: 1148px) {
+  /* line 516, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_left_pane {
+    top: auto !important;
+  }
+}
+/*----------------- navbar -----------------*/
+@media only screen and (max-height: 523px) {
+  /* line 524, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  body {
+    position: relative;
+    top: 60px;
+  }
+
+  /* line 529, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar {
+    width: 100%;
+    height: 60px;
+    /* replace with flex-shrink */
+    min-width: 650px;
+  }
+
+  /* line 536, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar #logo {
+    float: left;
+    width: 110.88px;
+    height: 59px;
+  }
+
+  /* line 542, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar ul {
+    height: 30px;
+    min-height: 30px;
+    min-width: 131px;
+    margin-top: 15px;
+    margin-right: 10px;
+    left: auto;
+    display: block;
+    float: right;
+    position: static;
+  }
+
+  /* line 554, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar ul li, .navbar ul a {
+    display: inline-block !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-position-x: 35% !important;
+  }
+
+  /* line 561, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar #button_panel {
+    top: auto;
+    bottom: 153px;
+    margin-top: auto;
+    bottom: auto;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 60px;
+    min-height: 60px;
+    text-align: center;
+    min-width: 387px;
+  }
+
+  /* line 575, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar .buttons {
+    float: left;
+    margin-left: 5.6% !important;
+    display: inline-block;
+    top: auto !important;
+    position: static !important;
+  }
+
+  /* line 583, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar #home, #home_green {
+    /*margin-left: 0 !important;*/
+  }
+
+  /* line 587, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .sample_containers {
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 1148px) {
+  /*--------------- home page ---------------*/
+  /* line 596, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .column {
+    display: flex;
+    flex-flow: column !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 597px;
+    justify-content: space-evenly !important;
+  }
+
+  /* line 606, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #intro, .left_pane {
+    order: 1;
+    position: relative !important;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  /* line 614, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #selfie_container, .right_pane {
+    order: 2;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* line 620, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_left_pane {
+    left: 0 !important;
+    top: 23.1%;
+    transform: none !important;
+    height: auto !important;
+  }
+
+  /* line 627, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_left_pane, #headline2, #headline1, #ampersand, #skills_left_pane .line {
+    margin: 0 auto !important;
+  }
+
+  /* line 631, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_left_pane h1 {
+    font-size: 3.4em !important;
+  }
+
+  /* line 633, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #headline1 {
+    margin-right: 0px !important;
+    margin-bottom: 5px !important;
+  }
+
+  /* line 638, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #headline2 {
+    margin-bottom: 31px !important;
+  }
+
+  /* line 640, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #ampersand {
+    right: 0;
+    left: 10px;
+  }
+
+  /* line 645, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_left_pane ul {
+    justify-content: center;
+  }
+
+  /* line 647, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_left_pane p {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* line 654, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_right_pane {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 446.81px;
+    height: 250.01453px;
+  }
+
+  /* line 662, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_left_pane li {
+    margin: 3px 3px;
+  }
+
+  /* line 664, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_project_img {
+    height: 250.01453px !important;
+  }
+
+  /* line 666, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_project_img img {
+    width: 446.81px !important;
+    height: 250.01453px !important;
+  }
+
+  /* line 671, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #selfie_container {
+    bottom: 70px;
+    min-height: 189px;
+  }
+
+  /* line 676, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #intro {
+    margin-bottom: 120px;
+    min-height: 241.39px;
+  }
+}
+/* ----------- iPhone 8 ----------- */
+@media only screen and (max-width: 420px) and (max-height: 820px) {
+  /* line 686, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  body, html {
+    overflow: hidden;
+  }
+
+  /* line 688, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .column {
+    top: 80px;
+  }
+
+  /* line 690, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #skills_page {
+    top: -60px !important;
+  }
+
+  /* line 692, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #button_panel {
+    width: 100% !important;
+  }
+
+  /* line 696, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar {
+    width: 100%;
+    height: 60px;
+  }
+
+  /* line 701, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  p {
+    font-size: 10px !important;
+  }
+
+  /* line 703, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #about_left_pane {
+    top: 55%;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 80% !important;
+  }
+
+  /* line 710, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #me {
+    right: 40px !important;
+  }
+
+  /* line 714, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar #header_toggler {
+    float: right;
+    height: 30px;
+    width: 25.7167px;
+    object-fit: contain;
+    background-image: url("horizontal_spritesheet");
+    background-size: 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  /* line 725, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar #button_panel {
+    left: 100%;
+    top: 60px;
+    background-color: #181818;
+    bottom: 153px;
+    margin-top: auto;
+    bottom: auto;
+    width: 65%;
+    height: 60px;
+    min-height: 60px;
+    min-width: 387px;
+    opacity: 0;
+    webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  /* line 741, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar .buttons {
+    float: left;
+    margin-left: auto;
+    display: inline-block;
+    top: auto !important;
+    position: static !important;
+    margin-left: 12px !important;
+  }
+
+  /* line 750, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar ul {
+    display: none;
+  }
+
+  /* line 754, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  .navbar #logo {
+    float: left;
+    height: 59px;
+    width: 60px;
+  }
+
+  /* line 760, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #selfie_container {
+    height: 122.5px !important;
+    min-height: 122.5px !important;
+    width: 169.715px !important;
+    bottom: 100px;
+  }
+
+  /* line 767, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #selfie {
+    padding: 4.335% !important;
+    padding-top: 5.5694% !important;
+    padding-bottom: 0 !important;
+    width: 92.81% !important;
+    height: 100% !important;
+  }
+
+  /* line 775, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #selfie img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* line 780, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/application.scss */
+  #selfie_caption {
+    top: 106.5%;
+    width: 105.2635% !important;
+    height: 27.785% !important;
+    font-size: 17px !important;
+    line-height: 0px !important;
+    transform: translate(2%, 28%) rotate(2deg) !important;
+  }
+}

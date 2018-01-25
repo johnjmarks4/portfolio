@@ -2,7 +2,7 @@
   <div id="logo"></div>
 </div>
 
-<div id="header_toggler">
+<div id="header_toggler" onclick="toggleHeader()">
   <table id="button_panel"> 
     <%= content_tag(:tr, class: "buttons", id: on_page("home")) do -%>
       <td class="button_transform">
@@ -48,3 +48,18 @@
   <li id="facebook"><%= link_to "", "https://www.facebook.com/john.j.marks.1" %></li>
   <li id="rss"></li>
 </ul>
+
+<script>
+  function toggleHeader() {
+    var header = document.querySelector("#button_panel");
+    if (header.style.left == "100%") {
+      header.style = "left: 0; opacity: 1;";
+      var toggler = document.querySelector("#header_toggler");
+      toggler.style["background-position"] = "0px -150px";
+      console.log(toggler.style);
+    } else {
+      header.style = "left: 100%; opacity: 0;";
+      toggler.style["background-position"] = "auto";
+    }
+  }
+</script>

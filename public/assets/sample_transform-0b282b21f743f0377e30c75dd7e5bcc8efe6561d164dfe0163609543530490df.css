@@ -1,39 +1,47 @@
+/* line 1, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
 .sample_containers {
   opacity: 0.4;
 }
 
+/* line 5, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
 .sample_containers:hover {
   object-fit: cover !important;
   opacity: 1;
   overflow: hidden;
 }
 
+/* line 11, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
 .sample_containers:hover a img {
   transform: scale(1.2);
   transition: all .1s ease-in-out;
 }
 
+/* line 16, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
 .sample_description {
   overflow: hidden;
   position: relative;
   bottom: 53.0659%;
-  width: 1em; /*4.075%;*/
-  height: 1em; /*6.6%;*/
+  width: 1em;
+  /*4.075%;*/
+  height: 1em;
+  /*6.6%;*/
   visibility: hidden;
   display: block;
   margin: 0 auto;
-  background: rgb(237, 93, 31); 
+  background: #ed5d1f;
   border-radius: 100%;
   -webkit-transition: all .1s ease-in-out;
-  transition: all .1s linear;        
+  transition: all .1s linear;
 }
 
+/* line 31, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
 .sample_containers:hover .sample_description {
   visibility: visible;
   transform: scale(10, 10);
 }
 
-.sample_text, .sample_text:hover, .sample_text:active, 
+/* line 36, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_text, .sample_text:hover, .sample_text:active,
 .sample_text:visited, .sample_text:link {
   visibility: hidden;
   position: relative;
@@ -43,7 +51,7 @@
   display: block;
   margin: 0 auto;
   font-size: 5.5px;
-  font-family: Montserrat, Tahoma;       
+  font-family: Montserrat, Tahoma;
   font-weight: normal;
   text-decoration: none;
   text-align: center;
@@ -54,11 +62,13 @@
   transform: translateY(58.5%);
 }
 
-.sample_text p { 
+/* line 57, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_text p {
   color: #000000;
   letter-spacing: 3px;
 }
 
+/* line 62, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
 .sample_containers:hover .sample_text {
   visibility: visible;
   transform: scale(1.95, 2);

@@ -25,6 +25,7 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -223,6 +224,7 @@ ul a {
   margin: 7.5px 0;
   line-height: 20px;
   left: 142px !important;
+  -webkit-transform: none !important;
   transform: none !important;
 }
 
@@ -344,8 +346,9 @@ li.selected {
 #skills_project_img img.show {
   position: absolute;
   left: 100%;
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
   transition: 0.35s;
 }
 
@@ -525,11 +528,6 @@ li.selected {
     top: 60px;
   }
 
-  .navbar #button_panel {
-    top: auto;
-    bottom: 153px;
-  }
-
   .navbar {
     width: 100%;
     height: 60px;
@@ -563,15 +561,18 @@ li.selected {
   }
 
   .navbar #button_panel {
+    top: auto;
+    bottom: 153px;
     margin-top: auto;
     bottom: auto;
     left: 60%;
-    transform: translateX(-50%);
     width: 65%;
     height: 60px;
     min-height: 60px;
     text-align: center;
     min-width: 387px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .navbar .buttons { 
@@ -610,20 +611,23 @@ li.selected {
     position: relative !important;
     top: 0;
     bottom: 0;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
   #selfie_container, .right_pane {
     order: 2;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
-  #skills_left_pane { 
-    left: 0 !important;
+  #skills_left_pane {
     top: 23.1%;
-    transform: none !important;
+    left: 0 !important;
     height: auto !important;
+    -webkit-transform: none !important;
+    transform: none !important;
   }
 
   #skills_left_pane, #headline2, #headline1, #ampersand, #skills_left_pane .line {
@@ -681,17 +685,25 @@ li.selected {
   }
 }
 
-/* ----------- iPhone 8 ----------- */
+@media only screen and (max-width: 375px) and (max-height: 820px) {
+  #home_page p { font-size: 10px !important; }
+}
 
-@media only screen and (max-width: 375px) and (max-height: 667px) {
+/* ----------- iPhone 8 plus ----------- */
 
-  body, html { overflow: hidden; }
+@media only screen and (max-width: 527px) and (max-height: 820px) {
 
-  body { top: 60px; }
+  .column { top: 80px; }
 
   .navbar {
     width: 100%;
     height: 60px;
+  }
+
+  .navbar #logo {
+    float: left;
+    height: 59px;
+    width: 60px;
   }
 
   .navbar #header_toggler {
@@ -699,23 +711,142 @@ li.selected {
     height: 30px;
     width: 25.7167px;
     object-fit: contain;
-    background-image: url("horizontal");
+    background-image: url("horizontal_spritesheet");
     background-size: 30px;
     margin-top: 15px;
     margin-right: 15px;
   }
 
   .navbar #button_panel {
-    display: none;
+    left: 100%;
+    top: 60px;
+    bottom: auto;
+    background-color: #181818;
+    margin-top: auto;
+    width: 100% !important;
+    height: 60px;
+    min-height: 60px;
+    min-width: 387px;
+    opacity: 0;
+    webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .navbar .buttons { 
+    float: left;
+    margin-left: auto;
+    display: inline-block; 
+    top: auto !important;
+    position: static !important;
+    margin-left: 12px !important;
   }
 
   .navbar ul {
     display: none;
   }
 
-  .navbar #logo {
-    float: left;
-    height: 59px;
-    width: 60px;
+  #home_page p { font-size: 11.5px; }
+
+  #home_page #selfie_container {
+    height: 122.5px !important;
+    min-height: 122.5px !important;
+    width: 169.715px !important;
+    bottom: 100px;
+  }
+
+  #home_page #selfie {
+    padding: 4.335% !important;
+    padding-top: 5.5694% !important;
+    padding-bottom: 0 !important;
+    width: 92.81% !important;
+    height: 100% !important;
+  }
+
+  #home_page #selfie img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  #home_page #selfie_caption {
+    top: 98% !important;
+    width: 105.2635% !important;
+    height: 27.785% !important;
+    font-size: 17px !important;
+    line-height: 0px !important;
+    -webkit-transform: translate(2%, 28%) rotate(2deg) !important;
+    transform: translate(2%, 28%) rotate(2deg) !important;
+  }
+
+  #about_left_pane {
+    top: 55%;
+    left: 50% !important;
+    width: 80% !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  #skills_page { 
+    top: -60px !important;
+    left: 50%;
+    width: 80%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  #skills_left_pane, #headline2, #headline1, #ampersand, #skills_left_pane .line { margin: 0 !important; }
+
+  #skills_left_pane {
+    width: 100% !important;
+  }
+
+  #skills_left_pane .line {
+    margin-bottom: 15px !important;
+  }
+
+  #headline2 {
+    margin-bottom: 36px !important;
+  }
+
+  #ampersand {
+    float: none !important;
+  }
+
+  #skills_right_pane { 
+    top: 20% !important;
+    width: 100% !important;
+  }
+
+  #skills_left_pane ul {
+    justify-content: space-between;
+  }
+
+  #me { 
+    float: left !important;
+    right: 0 !important;
+    left: 10px !important;
+  }
+
+  #my_work_page {
+    top: 60px;
+  }
+
+  .sample_containers {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  #contact_page {
+    width: 80% !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  #contact_form {
+    float: none;
+  }
+
+  #contact_form input[type=text], input[type=email], textarea  {
+    width: 100% !important;
   }
 }

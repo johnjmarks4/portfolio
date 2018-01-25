@@ -6,6 +6,8 @@
   right: 2.7737%;
   width: 242.45px;
   display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; 
   flex-flow: column;
 }
 
@@ -21,6 +23,7 @@
   padding-bottom: 0;
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
   -webkit-transition: -webkit-transform .15s linear;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
@@ -44,14 +47,15 @@
   position: relative;
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
+  transform: scale(1.25);
   z-index: 5;
 }
 
 #selfie:hover + #selfie_caption {
-  transform: scale(1.251, 1.179) translate(3px, 24.3px);
   -webkit-transform: scale(1.251, 1.179) translate(3px, 24.3px);
   -o-transform: scale(1.251, 1.179) translate(3px, 24.3px);
   -moz-transform: scale(1.251, 1.179) translate(3px, 24.3px);
+  transform: scale(1.251, 1.179) translate(3px, 24.3px);
   transition: all .15s ease-in-out;
   -webkit-transition: -webkit-transform .15s linear;
   -moz-transition: all .15s ease-in-out;
@@ -75,6 +79,7 @@
   color: black;
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
   transition: all .15s ease-in-out;
   -webkit-transition: -webkit-transform .15s linear;
   -moz-transition: all .15s ease-in-out;
