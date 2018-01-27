@@ -784,16 +784,24 @@ li.selected {
   #home_page #selfie img {
     width: 100% !important;
     height: 100% !important;
+    padding-bottom: 51.04px !important;
   }
 
   #home_page #selfie_caption {
-    top: 98% !important;
-    width: 105.2635% !important;
+    top: 114% !important;
+    left: auto;
+    right: 2px;
+    width: 100.2635% !important;
     height: 27.785% !important;
     font-size: 17px !important;
     line-height: 0px !important;
-    -webkit-transform: translate(2%, 28%) rotate(2deg) !important;
-    transform: translate(2%, 28%) rotate(2deg) !important;
+  }
+
+  #selfie:hover + #selfie_caption, #selfie:active + #selfie_caption {
+    -webkit-transform: scale(1.251, 1.179) translate(3px, 19px) !important;
+    -o-transform: scale(1.251, 1.179) translate(3px, 19px) !important;
+    -moz-transform: scale(1.251, 1.179) translate(3px, 19px) !important;
+    transform: scale(1.251, 1.179) translate(3px, 19px) !important;
   }
 
   #about_left_pane {
