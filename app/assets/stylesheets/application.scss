@@ -207,6 +207,7 @@ ul a {
 #skills_left_pane, #about_left_pane {
   order: 1;
   position: absolute;
+  left: 10.625%;
   margin: 0 auto !important;
   width: 410px;
   height: 100%;
@@ -215,13 +216,10 @@ ul a {
   justify-content: center;
 }
 
-#skills_left_pane { left: 10%; }
-
 #about_left_pane {
   position: absolute !important;
   margin: 7.5px 0;
   line-height: 20px;
-  left: 142px !important;
   -webkit-transform: none !important;
   transform: none !important;
 }
@@ -407,12 +405,16 @@ li.selected {
 }
 
 #contact_left_pane {
-  margin: 0 auto !important;
-  width: 80%;
-  height: 100%;
   position: absolute;
-  left: 10%;
-  top: 140px;
+  top: 30px;
+  left: 10.625%;
+  width: 646px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  -webkit-transform: none;
+  transform: none;
 }
 
 #contact_left_pane #contact {
@@ -524,7 +526,7 @@ li.selected {
 
 /*----------------- navbar -----------------*/
 
-@media only screen and (max-height: 523px) {
+@media only screen and (max-height: 523px), (max-width: 821px) {
 
   body {
     position: relative;
@@ -534,7 +536,6 @@ li.selected {
   .navbar {
     width: 100%;
     height: 60px;
-    /* replace with flex-shrink */
     min-width: 650px;
   }
 
@@ -592,6 +593,12 @@ li.selected {
 
   .sample_containers {
     margin-left: 0 !important;
+  }
+
+  #contact_left_pane {
+    top: -30px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 }
 
