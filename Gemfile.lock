@@ -172,6 +172,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  autoprefixer-rails
   bootstrap-sass
   byebug
   capybara (~> 2.13)

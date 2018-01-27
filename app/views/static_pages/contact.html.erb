@@ -1,18 +1,19 @@
 <div id="contact_page">
-  <div class="line">
-    <h1 id="contact">Contact</h1>
-    <h1 id="me">Me</h1>
+  <div id="contact_left_pane" class="left_pane">
+    <div class="line">
+      <h1 id="contact">Contact</h1>
+      <h1 id="me">Me</h1>
+    </div>
+    <p>Feel free to send me any questions using the form below.</p>
+
+    <%= form_tag "https://formspree.io/johnjmarks4@gmail.com", id: "contact_form" do %>
+      <%= text_field_tag :name, "Name", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
+      <%= email_field_tag :email, "Email", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
+      <%= text_field_tag :subject, "Subject", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
+      <%= text_area_tag :message, "Message", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
+      <%= submit_tag "SEND", id: "send_button" %>
+    <% end %>
   </div>
-  <p>Feel free to send me any questions using the form below.</p>
-
-  <%= form_tag "https://formspree.io/johnjmarks4@gmail.com", id: "contact_form" do %>
-    <%= text_field_tag :name, "Name", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
-    <%= email_field_tag :email, "Email", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
-    <%= text_field_tag :subject, "Subject", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
-    <%= text_area_tag :message, "Message", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
-    <%= submit_tag "SEND", id: "send_button" %>
-  <% end %>
-
 </div>
 
 <script>

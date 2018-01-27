@@ -7,6 +7,8 @@ end
 
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'autoprefixer-rails'
+
 gem 'rails', '~> 5.1.4'
 # Use postgreSQL as the database for Active Record
 group :production do

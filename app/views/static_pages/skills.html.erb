@@ -1,24 +1,26 @@
 <div id="skills_page" class="column">
-  <div id="skills_left_pane" class="left_pane">
-    <div class="line">
-      <h1 id="headline1">Skills</h1>
-      <h1 id="ampersand">&</h1>
+  <div id="skills_container">
+    <div id="skills_left_pane" class="left_pane">
+      <div class="line">
+        <h1 id="headline1">Skills</h1>
+        <h1 id="ampersand">&</h1>
+      </div>
+      <h1 id="headline2">Experience</h1>
+      <p>Press a highlighted button to see a project.</p>
+      <ul>
+        <% @skills.each do |skill| %>
+          <% @highlighted.include?(skill) ? hl = "highlight" : hl = "no_highlight" %>
+          <%= content_tag(:li, skill.upcase, id: skill.gsub(/ /, '_'), class: hl, onclick: "lightButton(this)") %>
+        <% end %>
+      </ul>
     </div>
-    <h1 id="headline2">Experience</h1>
-    <p>Press a highlighted button to see a project.</p>
-    <ul>
-      <% @skills.each do |skill| %>
-        <% @highlighted.include?(skill) ? hl = "highlight" : hl = "no_highlight" %>
-        <%= content_tag(:li, skill.upcase, id: skill.gsub(/ /, '_'), class: hl, onclick: "lightButton(this)") %>
-      <% end %>
-    </ul>
-  </div>
-  <div id="skills_right_pane" class="right_pane">
-    <%= content_tag(:div, "", id: "r_button", onclick: "nextButton(this)") %>
-    <div id="skills_project_img">
-      <div id="slide"></div>
+    <div id="skills_right_pane" class="right_pane">
+      <%= content_tag(:div, "", id: "r_button", onclick: "nextButton(this)") %>
+      <div id="skills_project_img">
+        <div id="slide"></div>
+      </div>
+      <%= content_tag(:div, "", id: "l_button", onclick: "prevButton(this)") %>
     </div>
-    <%= content_tag(:div, "", id: "l_button", onclick: "prevButton(this)") %>
   </div>
 </div>
 
