@@ -11,9 +11,10 @@
 .sample_containers:hover a img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  transition: all .1s ease-in-out;
+  transition: all 150ms ease-out;
 }
 
+/* Change background to background image of a circle */
 .sample_description {
   overflow: hidden;
   position: relative;
@@ -25,8 +26,9 @@
   margin: 0 auto;
   background: rgb(237, 93, 31); 
   border-radius: 100%;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s linear;        
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+  transform: scale(0.2);        
 }
 
 .sample_containers:hover .sample_description {
@@ -39,7 +41,6 @@
 .sample_text:visited, .sample_text:link {
   visibility: hidden;
   position: relative;
-  bottom: 123.165px;
   left: 2px;
   width: 240px;
   display: block;
@@ -50,11 +51,11 @@
   text-decoration: none;
   text-align: center;
   line-height: 0px;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
   bottom: 58.5%;
-  -webkit-transform: translateY(58.5%);
-  transform: translateY(58.5%);
+  -webkit-transform: translateY(58.5%) scale(0.2);
+  transform: translateY(58.5%) scale(0.2);
 }
 
 .sample_text p { 
