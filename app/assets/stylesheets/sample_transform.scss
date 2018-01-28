@@ -14,15 +14,14 @@
   transition: all 150ms ease-in-out;
 }
 
-/* Change background to background image of a circle */
 .sample_description {
   overflow: hidden;
+  display: block;
   position: relative;
   bottom: 82.14%;
   width: 120px;
-  height: 230px;
+  height: 210px;
   visibility: hidden;
-  display: block;
   margin: 0 auto;
   opacity: 0;
   background: url(circle.png) no-repeat center;
