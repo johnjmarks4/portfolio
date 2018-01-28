@@ -413,7 +413,6 @@ li.selected {
   height: 90%;
   display: flex;
   flex-flow: column;
-  justify-content: center;
   -webkit-transform: none;
   transform: none;
 }
@@ -713,6 +712,8 @@ li.selected {
 /* ----------- iPhone 8 plus ----------- */
 
 @media only screen and (max-width: 527px) and (max-height: 820px) {
+
+  .left_pane { top: 135px !important; }
 
   .column { top: 80px; }
 
