@@ -203,6 +203,11 @@ ul a {
   justify-content: center;
 }
 
+#skills_left_pane .line { 
+  position: relative;
+  top: 4.4%; 
+}
+
 #skills_left_pane, #about_left_pane {
   order: 1;
   position: absolute;
@@ -212,6 +217,7 @@ ul a {
   height: 100%;
   display: flex;
   flex-flow: column;
+  justify-content: center;
 }
 
 #about_left_pane {
@@ -223,10 +229,11 @@ ul a {
 }
 
 #skills_right_pane {
-  position: absolute;
-  right: 5.6204%;
-  top: 23.1%;
   order: 2;
+  position: absolute;
+  top: 3%;
+  right: 5.6204%;
+  height: 100%;
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -333,11 +340,10 @@ li.selected {
 
 #skills_project_img img {
   position: absolute;
-  /*height: 100%;*/
+  left: 100%;
   display: block;
   width: 509.19px;
   height: 318.5px;
-  left: 100%;
 }
 
 #skills_project_img img.show {
@@ -816,6 +822,7 @@ li.selected {
     width: 80% !important;
     -webkit-transform: translateX(-50%) !important;
     transform: translateX(-50%) !important;
+    justify-content: normal;
   }
 
   #skills_page {
@@ -839,16 +846,17 @@ li.selected {
 
   #skills_left_pane, #headline2, #headline1, #ampersand { margin: 0 !important; }
 
+  #skills_left_pane { 
+    top: 0 !important;
+    width: 100% !important;
+    justify-content: normal;
+  }
+
   #skills_left_pane .line {
     margin-top: 30px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     margin-bottom: 0 !important;
-  }
-
-  #skills_left_pane { 
-    top: 0 !important;
-    width: 100% !important;
   }
 
   #skills_right_pane { 
