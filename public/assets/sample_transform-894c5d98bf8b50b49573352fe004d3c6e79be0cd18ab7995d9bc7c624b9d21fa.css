@@ -1,0 +1,93 @@
+/* line 1, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers {
+  opacity: 0.4;
+}
+
+/* line 5, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers:hover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* line 11, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers:hover a img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+/* Change background to background image of a circle */
+/* line 18, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_description {
+  overflow: hidden;
+  position: relative;
+  bottom: 53.0659%;
+  width: 1em;
+  height: 1em;
+  visibility: hidden;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  background: url(circle.png) no-repeat center;
+  border-radius: 100%;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+/* line 35, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers:hover .sample_description {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(10, 10);
+  transform: scale(10, 10);
+}
+
+/* line 42, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_text, .sample_text:hover, .sample_text:active,
+.sample_text:visited, .sample_text:link {
+  visibility: hidden;
+  position: relative;
+  left: 2px;
+  width: 240px;
+  display: block;
+  margin: 0 auto;
+  font-size: 5.5px;
+  font-family: Montserrat, Tahoma;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  line-height: 0px;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  bottom: 58.5%;
+  -webkit-transform: translateY(58.5%) scale(0.2);
+  transform: translateY(58.5%) scale(0.2);
+}
+
+/* line 63, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_text p {
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+/* line 68, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers:hover .sample_text {
+  visibility: visible;
+  -webkit-transform: scale(1.95, 2);
+  transform: scale(1.95, 2);
+}
+
+/* line 74, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+#sample_containers1 .sample_text p {
+  opacity: 0 !important;
+}
+
+/* line 76, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+#sample_containers1:hover .sample_text p {
+  opacity: 1 !important;
+}

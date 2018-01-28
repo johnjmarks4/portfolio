@@ -11,7 +11,7 @@
 .sample_containers:hover a img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  transition: all 150ms ease-out;
+  transition: all 150ms ease-in-out;
 }
 
 /* Change background to background image of a circle */
@@ -19,8 +19,8 @@
   overflow: hidden;
   position: relative;
   bottom: 53.0659%;
-  width: 1em; /*4.075%;*/
-  height: 1em; /*6.6%;*/
+  width: 1em;
+  height: 1em;
   visibility: hidden;
   display: block;
   margin: 0 auto;
@@ -28,8 +28,8 @@
   background: url(circle.png) no-repeat center;
   border-radius: 100%;
   transform: scale(0.2);    
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;    
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;    
 }
 
 .sample_containers:hover .sample_description {
@@ -53,8 +53,8 @@
   text-decoration: none;
   text-align: center;
   line-height: 0px;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 100ms ease-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   bottom: 58.5%;
   -webkit-transform: translateY(58.5%) scale(0.2);
   transform: translateY(58.5%) scale(0.2);

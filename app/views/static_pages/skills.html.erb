@@ -22,6 +22,12 @@
       <%= content_tag(:div, "", id: "l_button", onclick: "prevButton(this)") %>
     </div>
   </div>
+
+  <div id="images">
+    <% ["cs_fundamentals", "javascript", "object-oriented_programming", "ruby_on_rails", "tdd", "arrows green"].each do |image_name| %>
+      <%= image_tag image_name %>
+    <% end %>
+  </div>
 </div>
 
 <script>

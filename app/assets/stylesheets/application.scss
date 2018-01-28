@@ -316,6 +316,8 @@ li.selected {
   background-image: url("arrows green");
 }
 
+#skills_page #images { display: none; }
+
 #skills_project_img {
   order: 2;
   height: 318.5px !important;
@@ -586,10 +588,6 @@ li.selected {
     display: inline-block; 
     top: auto !important;
     position: static !important;
-  }
-
-  .navbar #home, #home_green {
-    /*margin-left: 0 !important;*/
   }
 
   .sample_containers {
