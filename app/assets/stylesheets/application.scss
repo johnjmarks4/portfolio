@@ -515,10 +515,13 @@ li.selected {
   background-color: #98ff98 !important;
 }
 
-#preload-01 { background: url("javascript") no-repeat -9999px -9999px; }
-#preload-02 { background: url("ruby on rails") no-repeat -9999px -9999px; }
-#preload-03 { background: url("cs fundamentals") no-repeat -9999px -9999px; }
-#preload-04 { background: url("tdd") no-repeat -9999px -9999px; }
+@media only screen and (max-width: 363px) {
+
+  #skills_right_pane { top: 100px; }
+
+  #skills_project_img { top: 100px; }
+
+}
 
 @media only screen and (max-height: 597px) and (max-width: 1148px) {
   
@@ -821,13 +824,14 @@ li.selected {
   }
 
   #skills_container {
+    position: absolute;
     top: 8%;
     width: 80%;
+    min-width: 229.59px;
     height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    position: absolute;
   }
 
   #skills_left_pane, #headline2, #headline1, #ampersand, #skills_left_pane .line { margin: 0 !important; }
