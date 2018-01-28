@@ -1,0 +1,108 @@
+/* line 1, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
+#selfie_container {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  float: right;
+  position: relative;
+  margin-top: 2.5547%;
+  right: 2.7737%;
+  width: 242.45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+/* line 14, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
+#selfie {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 175.5px;
+  width: 225px;
+  background-color: white;
+  padding: 10.5px;
+  padding-top: 13.5px;
+  padding-bottom: 0;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* line 32, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
+#selfie img {
+  position: relative;
+  right: 11px;
+  bottom: 14px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 175.5px;
+  width: 225px;
+  background-color: white;
+  padding: 10.5px;
+  padding-top: 13.5px;
+  padding-bottom: 51.04px !important;
+}
+
+/* line 46, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
+#selfie:hover {
+  position: relative;
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  z-index: 5;
+}
+
+/* line 54, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
+#selfie:hover + #selfie_caption, #selfie:active + #selfie_caption {
+  -webkit-transform: scale(1.251, 1.179) translate(3px, 24.3px);
+  transform: scale(1.251, 1.179) translate(3px, 24.3px);
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  -webkit-transition: -webkit-transform .15s linear;
+  -moz-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  z-index: 6;
+}
+
+/* line 66, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
+#selfie_caption {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  position: absolute;
+  top: 100%;
+  left: 17.93px;
+  width: 200px;
+  height: 50px;
+  text-decoration: none !important;
+  font-family: "Permanent Marker";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 16.25px;
+  font-size: 20px;
+  color: black;
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  -webkit-transition: -webkit-transform .15s linear;
+  -moz-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  padding: 16.25px;
+  background-color: white;
+  text-align: center;
+}

@@ -28,8 +28,8 @@
   background: url(circle.png) no-repeat center;
   border-radius: 100%;
   transform: scale(0.2);    
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;    
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;    
 }
 
 .sample_containers:hover .sample_description {

@@ -526,7 +526,7 @@ li.selected {
 
 /*----------------- navbar -----------------*/
 
-@media only screen and (max-height: 523px), (max-width: 821px) {
+@media only screen and (max-height: 523px), (max-width: 821px) and (min-width: 511px) {
 
   body {
     position: relative;
@@ -546,6 +546,7 @@ li.selected {
   }
 
   .navbar ul {
+    display: none !important;
     height: 30px;
     min-height: 30px;
     min-width: 131px;
