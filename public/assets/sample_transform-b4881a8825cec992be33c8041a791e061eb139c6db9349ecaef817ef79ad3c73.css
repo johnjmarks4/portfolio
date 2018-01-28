@@ -1,0 +1,47 @@
+/* line 1, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers {
+  opacity: 0.4;
+}
+
+/* line 5, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers:hover {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* line 11, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers:hover a img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+/* line 17, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_description {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  bottom: 82.14%;
+  width: 120px;
+  height: 210px;
+  visibility: hidden;
+  margin: 0 auto;
+  opacity: 0;
+  background: url(circle.png) no-repeat center;
+  -webkit-transform: scale(0.2);
+  transform: scale(0.2);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  background-position: 0 0px;
+}
+
+/* line 35, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/sample_transform.scss */
+.sample_containers:hover .sample_description {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
