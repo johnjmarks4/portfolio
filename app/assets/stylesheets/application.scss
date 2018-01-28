@@ -824,13 +824,12 @@ li.selected {
 
   #skills_container {
     position: absolute;
-    top: 8%;
+    top: 90px;
     width: 80%;
     min-width: 229.59px;
     height: 100%;
     display: flex;
     flex-flow: column;
-    justify-content: center;
   }
 
   #skills_left_pane, #headline2, #headline1, #ampersand, #skills_left_pane .line { margin: 0 !important; }
@@ -868,7 +867,7 @@ li.selected {
   }
 
   #contact_left_pane {
-    top: 9% !important;
+    top: 90px !important;
     margin: 0 !important;
     width: 80% !important;
     left: 50% !important;
