@@ -9,6 +9,7 @@ html, body {
   font-weight: 400;
   font-size: 14px;
   background-color: #3f3f3f;
+  overflow: hidden;
 }
 
 ::selection {
@@ -537,6 +538,8 @@ li.selected {
 
 @media only screen and (max-height: 523px), (max-width: 821px) and (min-width: 511px) {
 
+  html, body { overflow: visible; }
+
   body {
     position: relative;
     top: 60px;
@@ -611,6 +614,8 @@ li.selected {
 @media only screen and (max-width: 1148px) {
 
 /*--------------- home page ---------------*/
+
+  html, body { overflow: visible; }
 
   .column {
     display: flex;
@@ -723,6 +728,8 @@ li.selected {
 /* ----------- iPhone 8 plus ----------- */
 
 @media only screen and (max-width: 527px) and (max-height: 820px) {
+
+  html, body { overflow: visible; }
 
   .left_pane { top: 135px !important; }
 
