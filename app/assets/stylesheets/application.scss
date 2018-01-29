@@ -864,7 +864,7 @@ li.selected {
 
   #skills_left_pane, #headline2, #headline1, #ampersand { margin: 0 !important; }
 
-  #skills_left_pane { 
+  #skills_left_pane {
     top: 0 !important;
     width: 100% !important;
     justify-content: normal;
@@ -913,6 +913,7 @@ li.selected {
     flex-flow: column;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    justify-content: normal;
   }
 
   #contact_form { float: none; }
