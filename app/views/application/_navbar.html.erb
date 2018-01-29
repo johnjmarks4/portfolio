@@ -3,43 +3,33 @@
 </div>
 
 <div id="header_toggler" onclick="toggleHeader()">
-  <table id="button_panel"> 
-    <%= content_tag(:tr, class: "buttons", id: on_page("home")) do -%>
-      <td class="button_transform">
-        <td>
-          <%= link_to "HOME", root_path, class: "text_display" %>
-        </td>
-      </td>
+  <nav id="button_panel"> 
+    <%= content_tag(:div, class: "buttons", id: on_page("home")) do -%>
+      <div class="button_transform">
+        <%= link_to "HOME", root_path, class: "text_display" %>
+      </div>
     <% end -%>
-    <%= content_tag(:tr, class: "buttons", id: on_page("about")) do -%>
-      <td class="button_transform">
-        <td>
-          <%= link_to "ABOUT", about_path, class: "text_display" %>
-        </td>
-      </td>
+    <%= content_tag(:div, class: "buttons", id: on_page("about")) do -%>
+      <div class="button_transform">
+        <%= link_to "ABOUT", about_path, class: "text_display" %>
+      </div>
     <% end -%>
-    <%= content_tag(:tr, class: "buttons", id: on_page("skills")) do -%>
-      <td class="button_transform">
-        <td>
-          <%= link_to "SKILLS", skills_path, class: "text_display" %>
-        </td>
-      </td>
+    <%= content_tag(:div, class: "buttons", id: on_page("skills")) do -%>
+      <div class="button_transform">
+        <%= link_to "SKILLS", skills_path, class: "text_display" %>
+      </div>
     <% end %>
-    <%= content_tag(:tr, class: "buttons", id: on_page("my_work")) do -%>
-      <td class="button_transform">
-        <td>
-          <%= link_to "MY WORK", my_work_path, class: "text_display" %>
-        </td>
-      </td>
+    <%= content_tag(:div, class: "buttons", id: on_page("my_work")) do -%>
+      <div class="button_transform">
+        <%= link_to "MY WORK", my_work_path, class: "text_display" %>
+      </div>
     <% end -%>
-    <%= content_tag(:tr, class: "buttons", id: on_page("contact")) do -%>
-      <td class="button_transform">
-        <td>
-          <%= link_to "CONTACT", contact_path, class: "text_display" %>
-        </td>
-      </td>
+    <%= content_tag(:div, class: "buttons", id: on_page("contact")) do -%>
+      <div class="button_transform">
+        <%= link_to "CONTACT", contact_path, class: "text_display" %>
+      </div>
     <% end -%>
-  </table>
+  </nav>
 </div>
 
 <ul>

@@ -129,8 +129,6 @@ p {
 }
 
 .navbar #button_panel {
-  display: table;
-  float: right;
   height: 75px;
   width: 503px;
   min-height: 270px;
@@ -153,9 +151,10 @@ p {
   height: 270px;
 }
 
-#button_panel a {
+.navbar #button_panel a {
   width: 60px;
   height: 51px;
+  text-align: center;
 }
 
 #contact_me {
@@ -591,7 +590,7 @@ li.selected {
     bottom: 153px;
     margin-top: auto;
     bottom: auto;
-    left: 60%;
+    left: 60% !important;
     width: 65%;
     height: 60px;
     min-height: 60px;
@@ -769,6 +768,7 @@ li.selected {
   }
 
   .navbar #button_panel {
+    display: flex !important;
     left: 100%;
     top: 60px;
     bottom: auto;
@@ -781,15 +781,17 @@ li.selected {
     opacity: 0;
     webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    justify-content: space-evenly;
   }
 
   .navbar .buttons { 
-    float: left;
-    margin-left: auto;
-    display: inline-block; 
-    top: auto !important;
-    position: static !important;
-    margin-left: 12px !important;
+    top: 3px !important;
+    left: 0.5% !important;
+    display: inline-block;
+    position: relative !important;
+    margin: 0 !important;
+    width: 17% !important;
+    height: 57px !important;
   }
 
   .navbar ul { display: none; }
