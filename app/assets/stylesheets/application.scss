@@ -36,7 +36,7 @@ html, body {
 
 h1, p {
   text-align: center;
-  font-family: "Montserrat", "Tahoma";
+  font-family: sans-serif, "Montserrat", "Tahoma";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -857,7 +857,7 @@ li.selected {
     top: 135px !important;
     width: 80%;
     min-width: 229.59px;
-    height: 100%;
+    height: 110%;
     display: flex;
     flex-flow: column;
   }
@@ -868,6 +868,7 @@ li.selected {
     top: 0 !important;
     width: 100% !important;
     justify-content: normal;
+    margin-bottom: 5px;
   }
 
   #skills_left_pane .line {
@@ -880,7 +881,6 @@ li.selected {
   #skills_right_pane { 
     top: 5% !important;
     width: 100% !important;
-    margin-bottom: 40px;
   }
 
   #skills_left_pane .line { margin-bottom: 15px !important; }
