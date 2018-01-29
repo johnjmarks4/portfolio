@@ -711,7 +711,7 @@ li.selected {
     min-height: 189px;
   }
 
-  #intro { 
+  #intro {
     margin-bottom: 120px; 
     min-height: 241.39px;
   }
@@ -741,6 +741,8 @@ li.selected {
   html, body { overflow: visible; }
 
   .left_pane { top: 135px !important; }
+
+  #intro { top: auto !important; }
 
   .column { top: 80px; }
 
