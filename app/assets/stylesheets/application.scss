@@ -414,14 +414,14 @@ li.selected {
 
 #contact_left_pane {
   position: absolute;
-  top: 9.4%;
   left: 10.625%;
   width: 646px;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-flow: column;
   -webkit-transform: none;
   transform: none;
+  justify-content: center;
 }
 
 #contact_left_pane #contact {
@@ -442,6 +442,7 @@ li.selected {
 
 #contact_left_pane .line {
   position: relative;
+  margin-bottom: 15px;
 }
 
 #contact_left_pane p {
@@ -455,6 +456,7 @@ li.selected {
   float: left;
   position: relative;
   top: 20px;
+  margin-top: 7.5px;
   color: #9a9a9aa1;
 }
 
@@ -525,6 +527,13 @@ li.selected {
   #skills_right_pane { top: 100px; }
 
   #skills_project_img { top: 100px; }
+
+}
+
+
+@media only screen and (min-width: 1148px) {
+
+  #contact_left_pane * { top: 6.4% !important; }
 
 }
 
