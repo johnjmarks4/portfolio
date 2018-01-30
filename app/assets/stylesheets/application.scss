@@ -203,9 +203,12 @@ ul a {
   justify-content: center;
 }
 
+#skills_left_pane { top: 0.35%; }
+
 #skills_left_pane .line { 
   position: relative;
   top: 4.4%; 
+  margin-bottom: 15px;
 }
 
 #skills_left_pane, #about_left_pane {
@@ -281,19 +284,20 @@ li.selected {
   font-size: 4.1em !important;
   text-align: left;
   margin: 0;
-  margin-bottom: 15px;
   margin-top: 30px;
   font-size: 48px;
 }
 
 #skills_left_pane #headline1 {
   float: left;
+  margin-top: 30px !important;
   color: #f65026;
 }
 
 #skills_left_pane #ampersand {
   float: right;
   position: relative;
+  margin-top: 30px !important;
   right: 207px;
 }
 
@@ -427,21 +431,23 @@ li.selected {
   float: left;
   color: #98ff98;
   font-size: 4.1em !important;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 21px;
 }
 
 #contact_left_pane #me {
   float: right;
   color: #f65026;
   font-size: 4.1em !important;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 21px;
   position: relative;
   right: 334px;
 }
 
-#contact_left_pane .line {
-  position: relative;
-  margin-bottom: 15px;
+#contact_left_pane .line { 
+  position: relative; 
+  margin-top: 0px;
 }
 
 #contact_left_pane p {
@@ -703,8 +709,10 @@ li.selected {
   #skills_project_img img {
     width: 446.81px !important;
     height: 250.01453px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+  }
+
+  #skills_project_img img.show { 
+    transform: translateX(-94%) !important;
   }
 
   #selfie_container {
@@ -876,24 +884,24 @@ li.selected {
   }
 
   #skills_left_pane .line {
-    margin-top: 30px !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
+    margin-bottom: 15px !important;
   }
+
+  #skills_left_pane ul { justify-content: space-between; }
 
   #skills_right_pane { 
     top: 5% !important;
     width: 100% !important;
   }
 
-  #skills_left_pane .line { margin-bottom: 15px !important; }
+  #skills_project_img img.show { 
+    transform: translateX(-85%) !important;
+  }
 
   #headline2 { margin-bottom: 36px !important; }
 
   #ampersand { float: none !important; }
-
-  #skills_left_pane ul { justify-content: space-between; }
 
   #me { 
     float: left !important;
