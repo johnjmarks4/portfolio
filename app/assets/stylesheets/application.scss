@@ -703,6 +703,8 @@ li.selected {
   #skills_project_img img {
     width: 446.81px !important;
     height: 250.01453px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 
   #selfie_container {
