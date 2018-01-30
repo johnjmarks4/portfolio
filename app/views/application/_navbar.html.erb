@@ -42,14 +42,13 @@
 <script>
   function toggleHeader() {
     var header = document.querySelector("#button_panel");
+    var toggler = document.querySelector("#header_toggler");
     if (header.style.left == "100%") {
       header.style = "left: 0; opacity: 1;";
-      var toggler = document.querySelector("#header_toggler");
-      toggler.style["background-position"] = "0px -150px";
-      console.log(toggler.style);
+      toggler.style["background-position"] = "0 -150px";
     } else {
       header.style = "left: 100%; opacity: 0;";
-      toggler.style["background-position"] = "auto";
+      toggler.style["background-position"] = "initial";
     }
   }
 </script>
