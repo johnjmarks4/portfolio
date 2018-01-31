@@ -837,10 +837,10 @@ li.selected {
   }
 
   #selfie:hover + #selfie_caption, #selfie:active + #selfie_caption {
-    -webkit-transform: scale(1.251, 1.179) translate(3px, 19px) !important;
-    -o-transform: scale(1.251, 1.179) translate(3px, 19px) !important;
-    -moz-transform: scale(1.251, 1.179) translate(3px, 19px) !important;
-    transform: scale(1.251, 1.179) translate(3px, 19px) !important;
+    -webkit-transform: scale(1.251, 1.179) translate(-3px, 19px) !important;
+    -o-transform: scale(1.251, 1.179) translate(-3px, 19px) !important;
+    -moz-transform: scale(1.251, 1.179) translate(-3px, 19px) !important;
+    transform: scale(1.251, 1.179) translate(-3px, 19px) !important;
   }
 
   #about_left_pane {
