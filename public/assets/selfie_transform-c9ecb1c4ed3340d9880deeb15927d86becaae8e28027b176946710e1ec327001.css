@@ -1,71 +1,87 @@
+/* line 1, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
 #selfie_container {
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   float: right;
   position: relative;
   right: 2.7737%;
   margin-top: 2.5547%;
   width: 242.45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
-  -webkit-flex-direction: column; 
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
+/* line 14, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
 #selfie {
-  order: 1;
-  object-fit: cover;
-  box-sizing: content-box;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 175.5px;
   width: 224px;
   background-color: white;
   padding: 10.5px;
   padding-top: 13.5px;
   padding-bottom: 0;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
   transform: rotate(2deg);
   -webkit-transition: -webkit-transform .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
 
+/* line 33, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
 #selfie img {
   position: relative;
   right: 11px;
   bottom: 14px;
   height: 175.5px;
   width: 225px;
-  object-fit: cover;
-  box-sizing: content-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   padding: 10.5px;
   padding-top: 13.5px;
   padding-bottom: 51.04px !important;
   background-color: white;
 }
 
+/* line 47, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
 #selfie:hover {
   position: relative;
   -webkit-transform: scale(1.25) translateX(-3%);
-  -moz-transform: scale(1.25) translateX(-3%);
   transform: scale(1.25) translateX(-3%);
   z-index: 5;
 }
 
+/* line 55, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
 #selfie:hover + #selfie_caption, #selfie:active + #selfie_caption {
   -webkit-transform: scale(1.251, 1.179) translate(-2%, 24.3px);
-  -o-transform: scale(1.251, 1.179) translate(-2%, 24.3px);
-  -moz-transform: scale(1.251, 1.179) translate(-2%, 24.3px);
   transform: scale(1.251, 1.179) translate(-2%, 24.3px);
   -webkit-transition: -webkit-transform .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   z-index: 6;
 }
 
+/* line 67, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/selfie_transform.scss */
 #selfie_caption {
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   position: absolute;
   top: 100%;
   left: 17.93px;
@@ -83,8 +99,8 @@
   line-height: 16.25px;
   font-size: 20px;
   -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
   transform: rotate(2deg);
+  -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   -webkit-transition: -webkit-transform .15s linear;
   -moz-transition: all .15s ease-in-out;
