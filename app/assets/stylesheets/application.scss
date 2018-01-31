@@ -401,11 +401,13 @@ li.selected {
   line-height: 20px;
 }
 
-#about_page #me {
-  float: right;
-  position: relative;
-  right: 282px;
+#me {
+  float: left;
   color: #f65026;
+  font-size: 4.1em !important;
+  margin-top: 30px;
+  margin-bottom: 21px;
+  margin-left: 12.5px !important;
 }
 
 #contact_page {
@@ -432,15 +434,6 @@ li.selected {
   font-size: 4.1em !important;
   margin-top: 30px;
   margin-bottom: 21px;
-}
-
-#contact_left_pane #me {
-  float: left;
-  color: #f65026;
-  font-size: 4.1em !important;
-  margin-top: 30px;
-  margin-bottom: 21px;
-  margin-left: 12.5px;
 }
 
 #contact_left_pane .line { 
@@ -614,6 +607,12 @@ li.selected {
 
   .sample_containers {
     margin-left: 0 !important;
+  }
+
+  #about_left_pane {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
   }
 
   #contact_left_pane {
