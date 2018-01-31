@@ -18,11 +18,13 @@
 
 <script>
   function inputFocus(i){
+    console.log(i);
     if(i.value==i.defaultValue){ i.value=""; i.style.color="#8d8d8d";
     }
   }
 
   function inputBlur(i){
+    console.log(i);
     if(i.value==""){ i.value=i.defaultValue; i.style.color="#9a9a9aa1";
     }
   }

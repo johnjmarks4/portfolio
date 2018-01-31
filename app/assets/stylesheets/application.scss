@@ -435,13 +435,12 @@ li.selected {
 }
 
 #contact_left_pane #me {
-  float: right;
+  float: left;
   color: #f65026;
   font-size: 4.1em !important;
   margin-top: 30px;
   margin-bottom: 21px;
-  position: relative;
-  right: 334px;
+  margin-left: 12.5px;
 }
 
 #contact_left_pane .line { 
@@ -461,7 +460,8 @@ li.selected {
   position: relative;
   top: 20px;
   margin-top: 7.5px;
-  color: #9a9a9aa1;
+  /* Microsoft Edge can't understand hex version of this */
+  color: rgba(154, 154, 154, 0.6313725490196078);
 }
 
 #contact_form input {
