@@ -610,6 +610,14 @@ li.selected {
     position: static !important;
   }
 
+  .navbar #my_work:hover {
+    background-position: -1px -666px !important;
+  }
+
+  .navbar #contact:hover {
+    background-position: -1px -194px !important;
+  }
+
   .sample_containers {
     margin-left: 0 !important;
   }
