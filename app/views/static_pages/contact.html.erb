@@ -7,10 +7,10 @@
     <p>Feel free to send me any questions using the form below.</p>
 
     <%= form_tag "https://formspree.io/johnjmarks4@gmail.com", id: "contact_form" do %>
-      <%= text_field_tag :name, "Name", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
-      <%= email_field_tag :email, "Email", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
-      <%= text_field_tag :subject, "Subject", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
-      <%= text_area_tag :message, "Message", onfocus: "inputFocus(this)", onblur: "inputBlur(this)" %>
+      <%= text_field_tag :name, "Name", onfocus: "inputFocus(this)", onblur: "inputBlur(this)", autocomplete: "off" %>
+      <%= email_field_tag :email, "Email", onfocus: "inputFocus(this)", onblur: "inputBlur(this)", autocomplete: "off" %>
+      <%= text_field_tag :subject, "Subject", onfocus: "inputFocus(this)", onblur: "inputBlur(this)", autocomplete: "off" %>
+      <%= text_area_tag :message, "Message", onfocus: "inputFocus(this)", onblur: "inputBlur(this)", autocomplete: "off" %>
       <%= submit_tag "SEND", id: "send_button" %>
     <% end %>
   </div>
