@@ -21,14 +21,14 @@ function lightButton(i) {
 function prevButton(e) {
   var index = getIndex(e) - 1;
   if (index >= -1) {
-    switchButtons(index);
+    changeImage(imageNames[index]);
   }
 };
 
 function nextButton(e) {
   var index = getIndex(e) + 1;
   if (index <= imageNames.length - 1) {
-    switchButtons(index);
+    changeImage(imageNames[index]);
   }
 };
 
@@ -42,11 +42,6 @@ function getIndex(e) {
   };
 
   return index;
-}
-
-function switchButtons(index) {
-  lightButton(document.getElementById(imageNames[index]));
-  changeImage(imageNames[index]);
 }
 
 var urls = new Object();
@@ -68,11 +63,22 @@ function changeLink(imageName) {
 
 /* refactor this */
 function changeImage(imageName) {
+  var prevImage = document.querySelector(".show");
+  var lastClick = document.querySelector(".selected");
+  lightButton(document.getElementById(imageName));
+  console.log(lastClick);
+
+  if (lastClick == null) {
+    var swipeDirection = "right";
+  } else if (imageNames.indexOf(imageName) >= imageNames.indexOf(lastClick.id.replace(" ", "_"))) {
+    var swipeDirection = "right";
+  } else {
+    var swipeDirection = "left";
+  }
+
   if (imageName == "css3" || imageName == "html5") {
     var imageName = "ruby_on_rails";
   }
-
-  var prevImage = document.querySelector(".show");
 
   var image = document.createElement('img');
   image.setAttribute('src', '/assets/'.concat(imageName.concat(".jpg")));
@@ -81,6 +87,7 @@ function changeImage(imageName) {
 
   setTimeout(function() {
     image.classList.toggle('show');
+    image.setAttribute('id', swipeDirection);
   }, 100);
 
   setTimeout(function() {

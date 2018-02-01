@@ -10,7 +10,7 @@
       <ul>
         <% @skills.each do |skill| %>
           <% @highlighted.include?(skill) ? hl = "highlight" : hl = "no_highlight" %>
-          <%= content_tag(:li, skill.upcase, id: skill.gsub(/ /, '_'), class: hl, onclick: "lightButton(this)") %>
+          <%= content_tag(:li, skill.upcase, id: skill.gsub(/ /, '_'), class: hl) %>
         <% end %>
       </ul>
     </div>
