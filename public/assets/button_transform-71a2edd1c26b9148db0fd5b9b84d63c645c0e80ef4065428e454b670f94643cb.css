@@ -1,0 +1,177 @@
+/* line 1, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar .buttons {
+  position: absolute;
+  width: 60px;
+  height: 51px;
+  margin: 0 auto;
+  background-image: url("spritesheet.png");
+}
+
+/* line 9, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.text_display {
+  font-size: 11px;
+  letter-spacing: 1.25px;
+  font-family: Montserrat, Tahoma;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 17, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.buttons:hover .text_display {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #98ff98;
+}
+
+/* line 25, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #home {
+  background-position: -1px -368px;
+}
+
+/* line 29, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #home_green, #home:hover {
+  background-position: -1px -431px;
+}
+
+/* line 33, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #about {
+  top: 56px;
+  background-position: -1px -5px;
+}
+
+/* line 38, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #about_green {
+  top: 56px;
+  background-position: -1px -68px;
+}
+
+/* line 43, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #skills {
+  top: 112px;
+  background-position: -1px -839px;
+}
+
+/* line 48, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #skills_green {
+  top: 112px;
+  background-position: -1px -902px;
+}
+
+/* line 53, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #my_work {
+  top: 168px;
+  background-position: -1px -604px;
+}
+
+/* line 58, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #my_work_green {
+  top: 168px;
+  background-position: -1px -667px;
+}
+
+/* line 63, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #contact {
+  top: 219px;
+  background-position: -1px -132px;
+}
+
+/* line 68, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar #contact_green {
+  top: 219px;
+  background-position: -1px -195px;
+}
+
+/* line 73, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#about:hover {
+  background-position: -1px -68px;
+}
+
+/* line 77, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#skills:hover {
+  background-position: -1px -902px;
+}
+
+/* line 81, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#my_work:hover {
+  background-position: -1px -667px;
+}
+
+/* line 85, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#contact:hover {
+  background-position: -1px -195px;
+}
+
+/* line 89, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar .buttons:hover .text_display, .text_display:hover {
+  background-color: #181818;
+  -webkit-transition: background-color 100ms linear, opacity 0.25s linear;
+  transition: background-color 100ms linear, opacity 0.25s linear;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+/* line 99, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar .text_display {
+  opacity: 0;
+  width: 59px !important;
+  height: 51px;
+  line-height: 51px !important;
+  white-space: nowrap;
+}
+
+/* line 107, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar .text_display h {
+  line-height: 51px !important;
+}
+
+/* line 111, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+.navbar ul li {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-image: url("spritesheet.png");
+}
+
+/* line 119, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#twitter {
+  background-position: 0px -975px;
+}
+
+/* line 123, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#twitter:hover {
+  background-position: 0px -1035px;
+}
+
+/* line 127, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#linkedin {
+  background-position: 3px -500px;
+}
+
+/* line 131, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#linkedin:hover {
+  background-position: 3px -555px;
+}
+
+/* line 135, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#facebook {
+  background-position: 3px -264px;
+}
+
+/* line 139, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#facebook:hover {
+  background-position: 3px -319px;
+}
+
+/* line 143, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#rss {
+  background-position: 3px -736px;
+}
+
+/* line 147, C:/Users/johnj/odin-project/portfolio/app/assets/stylesheets/button_transform.scss */
+#rss:hover {
+  background-position: 3px -791px;
+}
