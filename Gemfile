@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.org/'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'newrelic_rpm'
+gem 'sprockets', '~> 3.7.2'
 
 gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
