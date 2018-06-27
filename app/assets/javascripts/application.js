@@ -46,7 +46,7 @@ function getIndex(e) {
 
 var urls = new Object();
 
-urls['ruby_on_rails'] = 'https://arcane-stream-86572.herokuapp.com';
+urls['ruby_on_rails'] = 'https://calm-escarpment-52412.herokuapp.com/';
 urls['javascript'] = "https://github.com/johnjmarks4/calculator";
 urls['object-oriented_programming'] = 'https://github.com/johnjmarks4/chess';
 urls['tdd'] = 'https://github.com/johnjmarks4/chess/blob/master/specs/game_spec.rb';
